@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morisaki Web ポートフォリオ</title>
+<meta name="description" content="会社ホームページ・ランディングページ制作のポートフォリオ。スマホ対応、公開までまるごとお任せいただけます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f4f2; --ink:#16181b; --sub:#5d636b; --line:rgba(22,24,27,.07);
+  --card:#ffffff; --shell:rgba(22,24,27,.035); --accent:#2f5d50; --accent-soft:#e3ece8;
+  --ease:cubic-bezier(.32,.72,0,1);
+  --shadow:0 30px 60px -30px rgba(22,24,27,.12),0 8px 20px -12px rgba(22,24,27,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans","Zen Kaku Gothic New",sans-serif;line-height:1.9;letter-spacing:.04em;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:10;display:flex;gap:6px;align-items:center;padding:6px;border-radius:999px;background:rgba(255,255,255,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 10px 30px -15px rgba(0,0,0,.18);border:1px solid var(--line)}
+.nav a{white-space:nowrap;font-size:13px;padding:8px 16px;border-radius:999px;transition:background .5s var(--ease)}
+.nav a:hover{background:var(--shell)}
+.nav .brand{font-weight:800;letter-spacing:.02em}
+
+/* hero */
+.hero{min-height:92dvh;display:flex;align-items:center;padding:140px 0 80px}
+.hero .wrap{width:100%}
+.eyebrow{display:inline-block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:5px 14px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:600;margin-bottom:28px}
+h1{font-size:clamp(38px,6.4vw,78px);line-height:1.25;font-weight:900;letter-spacing:.01em;word-break:keep-all;text-wrap:balance}
+h1 .mark{color:var(--accent)}
+.lead{margin-top:28px;font-size:clamp(15px,1.6vw,18px);color:var(--sub);max-width:620px}
+.cta-row{margin-top:44px;display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:14px;padding:8px 8px 8px 26px;border-radius:999px;background:var(--ink);color:#fff;font-size:15px;font-weight:500;transition:transform .6s var(--ease)}
+.btn:active{transform:scale(.98)}
+.btn .ic{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;transition:transform .6s var(--ease)}
+.btn:hover .ic{transform:translate(3px,-2px) scale(1.05)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid rgba(22,24,27,.14)}
+.btn.ghost .ic{background:var(--shell)}
+
+section{padding:120px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:56px;flex-wrap:wrap}
+h2{font-size:clamp(28px,4vw,46px);line-height:1.35;font-weight:900;word-break:keep-all}
+.sec-note{color:var(--sub);font-size:14px;max-width:380px}
+
+/* double bezel */
+.shell{background:var(--shell);border:1px solid var(--line);border-radius:32px;padding:7px}
+.core{background:var(--card);border-radius:25px;box-shadow:inset 0 1px 1px rgba(255,255,255,.9),var(--shadow);height:100%;overflow:hidden}
+
+/* works bento */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+.w-lg{grid-column:span 7}
+.w-sm{grid-column:span 5}
+.work{display:block;height:100%;transition:transform .8s var(--ease)}
+.work:hover{transform:translateY(-6px)}
+.thumb{aspect-ratio:16/10;position:relative;overflow:hidden}
+.thumb .mock{position:absolute;inset:18px 18px 0;border-radius:14px 14px 0 0;background:#fff;box-shadow:0 -10px 40px -10px rgba(0,0,0,.18);overflow:hidden;transition:transform 1s var(--ease)}
+.work:hover .mock{transform:translateY(-8px)}
+.meta{padding:26px 28px 30px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.tag{font-size:11px;padding:3px 10px;border-radius:999px;background:var(--shell);color:var(--sub)}
+.meta h3{font-size:20px;font-weight:700;line-height:1.5}
+.meta p{font-size:14px;color:var(--sub);margin-top:6px}
+.more{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-size:13px;font-weight:600;color:var(--accent)}
+
+/* mock minis */
+.m-bar{height:10px;display:flex;gap:5px;padding:10px 12px}
+.m-bar i{width:7px;height:7px;border-radius:50%;background:#e2e2e2}
+.m-hero{margin:14px 16px;border-radius:10px;height:46%;position:relative;overflow:hidden}
+.m-line{height:8px;border-radius:4px;background:#ececec;margin:8px 16px}
+.m-line.s{width:40%}.m-line.m{width:62%}
+.m-title{position:absolute;left:18px;bottom:18px;color:#fff;font-weight:900;font-size:clamp(14px,1.8vw,20px);line-height:1.35;text-shadow:0 2px 10px rgba(0,0,0,.2)}
+
+/* strengths */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.feat .core{padding:34px 30px}
+.num{font-family:"Plus Jakarta Sans";font-weight:800;font-size:13px;color:var(--accent);letter-spacing:.15em}
+.feat h3{font-size:19px;margin:10px 0 8px;line-height:1.5}
+.feat p{font-size:14px;color:var(--sub)}
+
+/* price */
+.price .core{padding:38px 34px}
+.price .plan{font-size:13px;color:var(--sub);font-weight:500}
+.price .yen{font-size:40px;font-weight:800;font-family:"Plus Jakarta Sans";margin:6px 0 2px;letter-spacing:0}
+.price .yen small{font-size:15px;font-weight:600;margin-left:4px}
+.price ul{list-style:none;margin-top:18px;font-size:14px}
+.price li{padding:9px 0;border-top:1px dashed rgba(22,24,27,.1)}
+.price li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:10px;vertical-align:middle}
+.price.pop .core{background:var(--ink);color:#fff}
+.price.pop .plan,.price.pop li{color:rgba(255,255,255,.75)}
+.price.pop li{border-color:rgba(255,255,255,.15)}
+.price.pop li::before{background:#9fd3bf}
+.note{font-size:13px;color:var(--sub);margin-top:22px}
+
+/* flow */
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:f}
+.step{background:var(--card);border-radius:22px;padding:24px 20px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.step b{display:block;font-size:15px;margin-bottom:4px}
+.step span{font-size:13px;color:var(--sub);line-height:1.8;display:block}
+.step::before{counter-increment:f;content:"STEP " counter(f);font-family:"Plus Jakarta Sans";font-size:11px;font-weight:800;letter-spacing:.15em;color:var(--accent);display:block;margin-bottom:8px}
+
+/* about + contact */
+.about{display:grid;grid-template-columns:5fr 7fr;gap:22px}
+.about .core{padding:40px 36px}
+.avatar{width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,#cfe2da,#8fb5a6);display:grid;place-items:center;font-size:30px;font-weight:800;color:#fff;font-family:"Plus Jakarta Sans"}
+.about h3{font-size:22px;margin-top:18px}
+.about dl{display:grid;grid-template-columns:110px 1fr;gap:12px 16px;font-size:14px}
+.about dt{color:var(--sub)}
+.contact{text-align:center}
+.contact .core{padding:72px 28px;background:var(--accent);color:#fff}
+.contact h2{color:#fff}
+.contact p{opacity:.85;margin:16px auto 34px;max-width:520px;font-size:15px}
+.contact .btn{background:#fff;color:var(--ink)}
+.contact .btn .ic{background:var(--accent-soft)}
+.contact .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.contact .btn.ghost .ic{background:rgba(255,255,255,.15)}
+.contact .cta-row{justify-content:center}
+footer{padding:40px 0 60px;text-align:center;font-size:12px;color:var(--sub)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(40px);filter:blur(6px);transition:opacity 1s var(--ease),transform 1s var(--ease),filter 1s var(--ease)}
+.rv.on{opacity:1;transform:none;filter:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;filter:none;transition:none}}
+
+@media (max-width:860px){
+  .w-lg,.w-sm{grid-column:span 12}
+  .grid3,.about{grid-template-columns:1fr}
+  .flow{grid-template-columns:1fr 1fr}
+  section{padding:84px 0}
+  .nav a:not(.brand):not(.nav-c){display:none}
+}
+@media (max-width:520px){
+  .wrap{padding:0 16px}
+  .flow{grid-template-columns:1fr}
+  .about dl{grid-template-columns:1fr;gap:2px}
+  .about dd{margin-bottom:10px}
+  .hero{padding-top:120px}
+}
+@media (max-width:600px){h1,h2,h3{word-break:normal;overflow-wrap:anywhere}}
+body{overflow-x:clip}
+.thumb.duo{background:linear-gradient(160deg,#e9e3d8,#d6cbb8)}
+.thumb.duo .mock{inset:18px auto 0 18px;width:calc(50% - 27px)}
+.thumb.duo .mock.mb{left:auto;right:18px;top:40px}
+.m-lab{position:absolute;right:12px;bottom:12px;font-size:11px;font-weight:700;background:var(--ink);color:#fff;border-radius:999px;padding:2px 10px}
+.links{display:flex;gap:22px;flex-wrap:wrap}
+.links .more:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="メニュー">
+  <a class="brand" href="#top">Morisaki Web</a>
+  <a href="#works">制作実績</a>
+  <a href="#price">料金</a>
+  <a href="#flow">流れ</a>
+  <a class="nav-c" href="#contact" style="background:var(--ink);color:#fff">相談する</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow rv">Website &amp; Landing Page</span>
+    <h1 class="rv">伝わるホームページを、<br><span class="mark">公開まで</span>まるごと。</h1>
+    <p class="lead rv">会社ホームページとランディングページの制作を承っています。原稿づくりが苦手な方も大丈夫です。ヒアリングをもとに文章の下書きからご用意し、スマホでも見やすいサイトに仕上げます。</p>
+    <div class="cta-row rv">
+      <a class="btn" href="#works">制作実績を見る<span class="ic">↗</span></a>
+      <a class="btn ghost" href="#contact">無料で相談する<span class="ic">→</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="works">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Works</span><h2 class="rv">制作実績</h2></div>
+      <p class="sec-note rv">掲載しているのは、業種ごとに制作したデザインサンプルです（実在の事業者ではありません）。クリックすると実際のページをご覧いただけます。</p>
+    </div>
+    <div class="bento">
+      <div class="shell w-lg rv"><div class="core work">
+        <div class="thumb duo">
+          <a class="mock ma" href="works/koumuten/index.html" aria-label="A案を見る"><div class="m-bar"><i></i><i></i><i></i></div>
+            <div class="m-hero" style="background:linear-gradient(135deg,#f3efe6,#e4dccb)"><div class="m-title" style="color:#2b2a26;text-shadow:none;writing-mode:vertical-rl;left:auto;right:18px;top:14px;bottom:auto;font-size:13px;line-height:1.7">家は、<br>ことばから<br>建てる</div></div>
+            <div class="m-line m"></div><div class="m-line s"></div><span class="m-lab">A案</span></a>
+          <a class="mock mb" href="works/koumuten-b/index.html" aria-label="B案を見る"><div class="m-bar"><i></i><i></i><i></i></div>
+            <div class="m-hero" style="background:linear-gradient(135deg,#4d6b4f,#a9b98f)"><div class="m-title">木のぬくもりの中で、<br>家族の毎日を。</div></div>
+            <div class="m-line m"></div><div class="m-line s"></div><span class="m-lab">B案</span></a>
+        </div>
+        <div class="meta"><div class="tags"><span class="tag">コーポレートサイト</span><span class="tag">工務店</span><span class="tag">デザイン2案</span><span class="tag">スマホ対応</span></div>
+          <h3>地域密着の工務店 ホームページ（2案提案）</h3><p>同じ工務店に、雰囲気の違うデザインを2案ご用意しました。A案は縦書きと余白で「言葉を大切にする会社」らしさを、B案は写真を大きく使い親しみやすさを重視しています。</p>
+          <div class="links"><a class="more" href="works/koumuten/index.html">A案を見る ↗</a><a class="more" href="works/koumuten-b/index.html">B案を見る ↗</a></div></div>
+      </div></div>
+
+      <div class="shell w-sm rv"><a class="core work" href="works/seitai/index.html">
+        <div class="thumb" style="background:linear-gradient(160deg,#eef3ef,#d5e5dc)">
+          <div class="mock"><div class="m-bar"><i></i><i></i><i></i></div>
+            <div class="m-hero" style="background:linear-gradient(135deg,#3e7a67,#8cc2ad)"><div class="m-title">その肩こり、<br>根本から。</div></div>
+            <div class="m-line m"></div><div class="m-line s"></div></div>
+        </div>
+        <div class="meta"><div class="tags"><span class="tag">ランディングページ</span><span class="tag">整体院</span></div>
+          <h3>整体院 集客用LP</h3><p>初回予約につながるよう、悩み→解決→料金→予約の順に1ページで流れる構成です。</p><span class="more">LPを見る ↗</span></div>
+      </a></div>
+
+      <div class="shell w-sm rv"><a class="core work" href="works/zeirishi/index.html">
+        <div class="thumb" style="background:linear-gradient(160deg,#e8ebf1,#cdd4e2)">
+          <div class="mock"><div class="m-bar"><i></i><i></i><i></i></div>
+            <div class="m-hero" style="background:linear-gradient(135deg,#1f2d4a,#4a5e86)"><div class="m-title">経営の数字に、<br>頼れる相棒を。</div></div>
+            <div class="m-line m"></div><div class="m-line s"></div></div>
+        </div>
+        <div class="meta"><div class="tags"><span class="tag">コーポレートサイト</span><span class="tag">士業</span></div>
+          <h3>税理士事務所 ホームページ</h3><p>信頼感を大切にした落ち着いたデザイン。料金表と対応業務をひと目で分かるようにしました。</p><span class="more">サイトを見る ↗</span></div>
+      </a></div>
+
+      <div class="shell w-lg rv"><div class="core" style="padding:40px 36px;display:flex;flex-direction:column;justify-content:center">
+        <span class="num">MORE</span>
+        <h3 style="font-size:22px;margin:10px 0 8px">その他の業種も対応できます</h3>
+        <p style="color:var(--sub);font-size:14px">美容室・サロン、飲食店、クリニック、教室・スクール、採用ページなど。業種に合わせた構成をご提案します。既存サイトのリニューアルや、スマホ対応だけのご依頼も歓迎です。</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow rv">Strengths</span><h2 class="rv">選ばれている理由</h2></div></div>
+    <div class="grid3">
+      <div class="shell feat rv"><div class="core"><span class="num">01</span><h3>原稿がなくても始められます</h3><p>簡単な質問にお答えいただくだけで、キャッチコピーや紹介文の下書きをこちらで作成します。</p></div></div>
+      <div class="shell feat rv"><div class="core"><span class="num">02</span><h3>スマホで見やすい</h3><p>閲覧の多くはスマホからです。電話・予約ボタンを押しやすい位置に置き、問い合わせにつなげます。</p></div></div>
+      <div class="shell feat rv"><div class="core"><span class="num">03</span><h3>早めの返信と丁寧な進行</h3><p>ご連絡は原則24時間以内にお返しします。進み具合はその都度お知らせするので安心です。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow rv">Price</span><h2 class="rv">料金の目安</h2></div><p class="sec-note rv">内容をうかがってから正式なお見積もりをお出しします。お見積もりは無料です。</p></div>
+    <div class="grid3">
+      <div class="shell price rv"><div class="core"><div class="plan">ランディングページ（1ページ）</div><div class="yen">30,000<small>円〜</small></div>
+        <ul><li>スマホ対応</li><li>原稿の下書き作成</li><li>問い合わせ・予約ボタン設置</li><li>修正2回まで無料</li></ul></div></div>
+      <div class="shell price pop rv"><div class="core"><div class="plan">会社ホームページ（5ページまで）</div><div class="yen">50,000<small>円〜</small></div>
+        <ul><li>トップ・会社概要・サービスなど</li><li>スマホ対応</li><li>お問い合わせフォーム</li><li>基本的なSEO設定</li></ul></div></div>
+      <div class="shell price rv"><div class="core"><div class="plan">修正・スマホ対応のみ</div><div class="yen">5,000<small>円〜</small></div>
+        <ul><li>文章・写真の差し替え</li><li>既存サイトのスマホ対応</li><li>ページの追加</li><li>小さなご依頼も歓迎です</li></ul></div></div>
+    </div>
+    <p class="note rv">※サーバー・ドメイン費用は別途となります。ご希望があれば取得や設定もお手伝いします。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow rv">Flow</span><h2 class="rv">ご依頼の流れ</h2></div></div>
+    <div class="flow">
+      <div class="step rv"><b>ご相談</b><span>メッセージでお気軽にどうぞ。</span></div>
+      <div class="step rv"><b>ヒアリング</b><span>目的やイメージをうかがいます。</span></div>
+      <div class="step rv"><b>デザイン確認</b><span>見本をお見せして調整します。</span></div>
+      <div class="step rv"><b>制作・修正</b><span>ご要望を反映して仕上げます。</span></div>
+      <div class="step rv"><b>公開・納品</b><span>公開までサポートします。</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="about">
+      <div class="shell rv"><div class="core"><div class="avatar">M</div><h3>Morisaki</h3><p style="color:var(--sub);font-size:14px;margin-top:6px">Web制作者。お客様の「伝えたいこと」を、見る人に伝わる形に整えるのが得意です。小さなお店や地域の会社のサイトづくりを中心に活動しています。</p></div></div>
+      <div class="shell rv"><div class="core" style="padding:40px 36px">
+        <dl>
+          <dt>対応業務</dt><dd>ホームページ制作、LP制作、既存サイトの修正、スマホ対応</dd>
+          <dt>対応時間</dt><dd>平日夜・土日（メッセージは毎日確認しています）</dd>
+          <dt>連絡方法</dt><dd>ランサーズ・クラウドワークスのメッセージ</dd>
+          <dt>納期の目安</dt><dd>LP 約1〜2週間 ／ ホームページ 約2〜4週間</dd>
+        </dl>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="shell contact rv"><div class="core">
+      <h2>まずはお気軽にご相談ください</h2>
+      <p>「何から決めればいいか分からない」段階でも大丈夫です。お見積もりだけのご相談も歓迎しています。</p>
+      <div class="cta-row">
+        <a class="btn" href="https://www.lancers.jp/" target="_blank" rel="noopener">ランサーズで相談<span class="ic">↗</span></a>
+        <a class="btn ghost" href="https://crowdworks.jp/" target="_blank" rel="noopener">クラウドワークスで相談<span class="ic">↗</span></a>
+      </div>
+    </div></div>
+  </div>
+</section>
+</main>
+
+<footer>© Morisaki Web</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4*80)+'ms';io.observe(el)});
+</script>
+</body>
+</html>
