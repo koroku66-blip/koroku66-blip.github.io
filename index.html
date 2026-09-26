@@ -148,6 +148,11 @@ body{overflow-x:clip}
 .m-lab{position:absolute;right:12px;bottom:12px;font-size:11px;font-weight:700;background:var(--ink);color:#fff;border-radius:999px;padding:2px 10px}
 .links{display:flex;gap:22px;flex-wrap:wrap}
 .links .more:hover{text-decoration:underline}
+.thumb.shot .pc{position:absolute;inset:18px 18px 0;border-radius:12px 12px 0 0;overflow:hidden;box-shadow:0 -10px 40px -12px rgba(0,0,0,.2);transition:transform 1s var(--ease)}
+.thumb.shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.thumb.shot .sp{position:absolute;right:30px;bottom:-40px;width:21%;aspect-ratio:390/844;border:4px solid var(--ink);border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 20px 40px -15px rgba(0,0,0,.35);transition:transform 1s var(--ease)}
+.work:hover .thumb.shot .pc{transform:translateY(-6px)}
+.work:hover .thumb.shot .sp{transform:translateY(-12px)}
 </style>
 </head>
 <body>
@@ -195,20 +200,18 @@ body{overflow-x:clip}
       </div></div>
 
       <div class="shell w-sm rv"><a class="core work" href="works/seitai/index.html">
-        <div class="thumb" style="background:linear-gradient(160deg,#eef3ef,#d5e5dc)">
-          <div class="mock"><div class="m-bar"><i></i><i></i><i></i></div>
-            <div class="m-hero" style="background:linear-gradient(135deg,#3e7a67,#8cc2ad)"><div class="m-title">その肩こり、<br>根本から。</div></div>
-            <div class="m-line m"></div><div class="m-line s"></div></div>
+        <div class="thumb shot" style="background:linear-gradient(160deg,#eef3ef,#d5e5dc)">
+          <div class="pc"><img src="works/seitai/thumb-pc.jpg" alt="整体院LPのパソコン表示" loading="lazy" width="1280" height="800"></div>
+          <div class="sp"><img src="works/seitai/thumb-sp.jpg" alt="整体院LPのスマホ表示" loading="lazy" width="390" height="844"></div>
         </div>
         <div class="meta"><div class="tags"><span class="tag">ランディングページ</span><span class="tag">整体院</span></div>
           <h3>整体院 集客用LP</h3><p>初回予約につながるよう、悩み→解決→料金→予約の順に1ページで流れる構成です。</p><span class="more">LPを見る ↗</span></div>
       </a></div>
 
       <div class="shell w-sm rv"><a class="core work" href="works/zeirishi/index.html">
-        <div class="thumb" style="background:linear-gradient(160deg,#e8ebf1,#cdd4e2)">
-          <div class="mock"><div class="m-bar"><i></i><i></i><i></i></div>
-            <div class="m-hero" style="background:linear-gradient(135deg,#1f2d4a,#4a5e86)"><div class="m-title">経営の数字に、<br>頼れる相棒を。</div></div>
-            <div class="m-line m"></div><div class="m-line s"></div></div>
+        <div class="thumb shot" style="background:linear-gradient(160deg,#e8ebf1,#cdd4e2)">
+          <div class="pc"><img src="works/zeirishi/thumb-pc.jpg" alt="税理士事務所HPのパソコン表示" loading="lazy" width="1280" height="800"></div>
+          <div class="sp"><img src="works/zeirishi/thumb-sp.jpg" alt="税理士事務所HPのスマホ表示" loading="lazy" width="390" height="844"></div>
         </div>
         <div class="meta"><div class="tags"><span class="tag">コーポレートサイト</span><span class="tag">士業</span></div>
           <h3>税理士事務所 ホームページ</h3><p>信頼感を大切にした落ち着いたデザイン。料金表と対応業務をひと目で分かるようにしました。</p><span class="more">サイトを見る ↗</span></div>
@@ -241,11 +244,11 @@ body{overflow-x:clip}
       <div class="shell price rv"><div class="core"><div class="plan">ランディングページ（1ページ）</div><div class="yen">30,000<small>円〜</small></div>
         <ul><li>スマホ対応</li><li>原稿の下書き作成</li><li>問い合わせ・予約ボタン設置</li><li>修正2回まで無料</li></ul></div></div>
       <div class="shell price pop rv"><div class="core"><div class="plan">会社ホームページ（5ページまで）</div><div class="yen">50,000<small>円〜</small></div>
-        <ul><li>トップ・会社概要・サービスなど</li><li>スマホ対応</li><li>お問い合わせフォーム</li><li>基本的なSEO設定</li></ul></div></div>
+        <ul><li>トップ・会社概要・サービスなど</li><li>スマホ対応</li><li>原稿の下書き作成</li><li>お問い合わせフォーム</li><li>基本的なSEO設定</li><li>修正2回まで無料</li></ul></div></div>
       <div class="shell price rv"><div class="core"><div class="plan">修正・スマホ対応のみ</div><div class="yen">5,000<small>円〜</small></div>
         <ul><li>文章・写真の差し替え</li><li>既存サイトのスマホ対応</li><li>ページの追加</li><li>小さなご依頼も歓迎です</li></ul></div></div>
     </div>
-    <p class="note rv">※サーバー・ドメイン費用は別途となります。ご希望があれば取得や設定もお手伝いします。</p>
+    <p class="note rv">※ページの追加は1ページ5,000円〜です。予約システムなど特別な機能を入れない限り、ほとんどのご依頼はこの料金の範囲で収まります。<br>※サーバー・ドメイン費用は別途となります。ご希望があれば取得や設定もお手伝いします。</p>
   </div>
 </section>
 
@@ -265,12 +268,13 @@ body{overflow-x:clip}
 <section>
   <div class="wrap">
     <div class="about">
-      <div class="shell rv"><div class="core"><div class="avatar">M</div><h3>Morisaki</h3><p style="color:var(--sub);font-size:14px;margin-top:6px">Web制作者。お客様の「伝えたいこと」を、見る人に伝わる形に整えるのが得意です。小さなお店や地域の会社のサイトづくりを中心に活動しています。</p></div></div>
+      <div class="shell rv"><div class="core"><div class="avatar">M</div><h3>Morisaki</h3><p style="color:var(--sub);font-size:14px;margin-top:6px">Web制作者。お客様の「伝えたいこと」を、見る人に伝わる形に整えることを大切にしています。小さなお店や地域の会社のサイトづくりに力を入れています。制作の前にじっくりお話をうかがい、文章の下書きからご用意します。</p></div></div>
       <div class="shell rv"><div class="core" style="padding:40px 36px">
         <dl>
           <dt>対応業務</dt><dd>ホームページ制作、LP制作、既存サイトの修正、スマホ対応</dd>
-          <dt>対応時間</dt><dd>平日夜・土日（メッセージは毎日確認しています）</dd>
+          <dt>対応時間</dt><dd>制作作業は平日夜・土日が中心です。メッセージは毎日確認し、24時間以内にお返事します。</dd>
           <dt>連絡方法</dt><dd>ランサーズ・クラウドワークスのメッセージ</dd>
+          <dt>納品方法</dt><dd>HTMLで制作し、サーバーへの公開作業まで対応します。公開後の文章や写真の更新は、修正プラン（5,000円〜）で代行します。</dd>
           <dt>納期の目安</dt><dd>LP 約1〜2週間 ／ ホームページ 約2〜4週間</dd>
         </dl>
       </div></div>
