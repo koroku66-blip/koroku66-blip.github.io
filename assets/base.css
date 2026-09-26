@@ -139,3 +139,11 @@ textarea{resize:vertical;min-height:130px}
 @media(max-width:760px){.sticky-mobile .button{padding:11px 12px;gap:12px;font-size:14px;white-space:nowrap}
 .button:after{flex-shrink:0}
 }
+.demo-fields{border:0;padding:0;margin:0;min-width:0}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.demo-fields:disabled{opacity:.65}
+@media(max-width:760px){
+html:not(.nav-ready) .header-inner{flex-wrap:wrap;padding-top:16px}
+html:not(.nav-ready) .menu-toggle{display:none}
+html:not(.nav-ready) .nav{display:flex;position:static;width:100%;box-shadow:none;padding:10px 0;border:0}
+}

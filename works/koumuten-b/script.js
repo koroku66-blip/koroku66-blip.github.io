@@ -43,3 +43,5 @@ document.getElementById('form').addEventListener('submit',e=>{
 });
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && dr.classList.contains('open')) { dr.classList.remove('open'); mb.setAttribute('aria-expanded','false'); mb.focus(); } });
+
+document.querySelector('#form .demo-fields').disabled = false;

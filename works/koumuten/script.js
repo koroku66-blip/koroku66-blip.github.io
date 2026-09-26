@@ -38,3 +38,5 @@ document.getElementById('form').addEventListener('submit',e=>{
   if(er.length){m.className='msg err';m.textContent=er.join(' ');m.focus();return;}
   m.className='msg ok';m.textContent='入力内容を確認しました。制作サンプルのため送信・保存は行っておらず、予約や資料請求は成立していません。';
 });
+
+document.querySelector('#form .demo-fields').disabled = false;

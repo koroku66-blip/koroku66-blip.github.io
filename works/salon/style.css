@@ -16,8 +16,6 @@
 .salon-sign{font:italic 90px Georgia,serif;color:#74756b;margin-top:40px}
 .salon-side{writing-mode:vertical-rl;font-size:11px;letter-spacing:.25em;padding-top:8px}
 .eyebrow{font-size:11px;font-weight:400}
-.salon-statement{max-width:700px;margin-left:auto;font-family:'Yu Mincho',serif;font-size:19px;line-height:2.35}
-.salon-statement p+p{margin-top:30px}
 .salon-soft{background:var(--soft)}
 .salon-menu-preview{display:grid;grid-template-columns:repeat(3,1fr);gap:45px;margin-bottom:25px}
 .salon-menu-preview>div{border-top:1px solid var(--ink);padding-top:25px}
@@ -52,7 +50,6 @@
 .salon-title>p:not(.eyebrow):not(.salon-sign){font-size:14px}
 .salon-sign{display:none}
 .salon-hero figure img{height:380px;object-position:50% 40%}
-.salon-statement{font-size:17px}
 .salon-menu-preview{grid-template-columns:1fr;gap:28px}
 .salon-menu-preview>div{display:grid;grid-template-columns:30px 1fr auto;align-items:center;gap:10px}
 .salon-menu-preview h3{font-size:32px;margin:0}
@@ -69,3 +66,4 @@
 .nav{background:white}
 .nav .nav-cta{margin:0;text-align:left}
 }
+.salon-consult{border-top:1px solid var(--line)}.salon-consult>.wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:100px}.consult-intro h2{font:400 32px/1.9 'Yu Mincho',serif}.consult-intro>p:not(.eyebrow){margin:25px 0;line-height:2.2}.consult-notes article{border-top:1px solid var(--ink);padding:25px 0 35px}.consult-notes span{font:11px Georgia,serif;letter-spacing:.14em}.consult-notes h3{font:400 22px/1.8 'Yu Mincho',serif;margin:15px 0}.consult-notes p{font-size:15px}@media(max-width:760px){.salon-consult>.wrap{grid-template-columns:1fr;gap:30px}.consult-intro h2{font-size:27px}.consult-intro>p:not(.eyebrow){font-size:15px}.consult-notes h3{font-size:20px}}

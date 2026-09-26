@@ -68,6 +68,7 @@
 <div class="demo-note"><strong>入力体験用のフォームです。</strong><br>内容は送信・保存されません。実際の個人情報を入力せず、架空の内容でお試しください。お問い合わせは成立しません。
 </div>
 <form class="demo-form">
+<fieldset class="demo-fields" disabled><legend class="visually-hidden">入力確認デモ</legend>
  <label class="field"><span>ご用件 <b class="required">必須</b></span><select name="subject" data-summary="ご用件" required><option value="">選択してください</option><option>旋盤加工</option><option>フライス加工</option><option>追加工</option><option>加工可否の相談</option></select></label><label class="field"><span>会社名（任意）</span><input maxlength="100" data-summary="会社名" autocomplete="off"></label>
 <div class="two"><label class="field"><span>材質</span><input data-summary="材質" maxlength="80"></label><label class="field"><span>数量</span><input type="number" min="1" max="999999" data-summary="数量"></label>
 </div>
@@ -78,7 +79,7 @@
 </div><noscript>
 <p>入力確認にはJavaScriptが必要です。実際の送信は行いません。
 </p></noscript>
-</form>
+</fieldset><noscript><p>JavaScriptが無効のため、入力体験は停止しています。送信・予約は行われません。</p></noscript></form>
 </div>
 </section>
 </main>

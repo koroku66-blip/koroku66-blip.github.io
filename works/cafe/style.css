@@ -64,3 +64,5 @@ body{font-family:'Yu Mincho',serif}
 .cafe-visit-photo{height:320px}
 .brand{font-size:22px}
 }
+.cafe-menu-head{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;padding:55px 0}.cafe-menu-head h1{font-size:48px;font-weight:400;margin-bottom:25px}.cafe-menu-head nav{display:flex;flex-wrap:wrap;gap:25px;margin-top:20px}.cafe-menu-head nav a{padding:10px 0;font-size:15px}.cafe-menu-head img{height:340px;object-fit:cover}.cafe-menu-head figcaption{font-size:11px;margin-top:10px}.menu-sheet{padding:55px 0;border-top:1px solid var(--line)}.menu-sheet>.wrap{display:grid;grid-template-columns:1fr 2fr;gap:50px}.menu-sheet h2{font-size:25px;font-weight:400}.menu-sheet .cafe-menu-list{width:100%}.menu-sheet .cafe-menu-list article:first-child{padding-top:0}
+@media(max-width:760px){.cafe-menu-head{grid-template-columns:1fr;gap:25px;padding:30px 0}.cafe-menu-head h1{font-size:36px}.cafe-menu-head img{height:220px}.menu-sheet>.wrap{grid-template-columns:1fr;gap:10px}.menu-sheet{padding:40px 0}}
