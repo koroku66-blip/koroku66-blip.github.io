@@ -62,3 +62,5 @@
 .brand{font-size:21px}
 .study-plan li{gap:12px}
 }
+.lesson-example{background:#fcf9e9}.lesson-example>.wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px}.lesson-example h2{font-size:29px;margin-bottom:22px}.lesson-example p{font-size:15px}.lesson-timeline{list-style:none;margin:0;padding:0;border-left:3px solid #d5b243}.lesson-timeline li{position:relative;padding:0 0 28px 28px}.lesson-timeline li:before{content:'';position:absolute;left:-7px;top:8px;width:11px;height:11px;border-radius:50%;background:#254b85}.lesson-timeline b{display:block;font-size:20px}.lesson-timeline span{display:block;margin-top:6px;font-size:15px}
+@media(max-width:760px){.lesson-example>.wrap{grid-template-columns:1fr;gap:30px}.lesson-example h2{font-size:25px}.lesson-timeline{margin-left:7px}}

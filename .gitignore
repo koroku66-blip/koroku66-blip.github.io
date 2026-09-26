@@ -3,3 +3,6 @@ node_modules/
 dist/
 
 _review.html
+
+_audit.html
+_noscript.html

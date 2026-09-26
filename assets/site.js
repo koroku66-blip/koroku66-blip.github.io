@@ -2,6 +2,7 @@
 // Only interface behavior. No network calls, cookies, or persistent storage.
 const menu = document.querySelector('.menu-toggle');
 if (menu) {
+  document.documentElement.classList.add('nav-ready');
   const nav = document.getElementById(menu.getAttribute('aria-controls'));
   const closeMenu = () => { menu.setAttribute('aria-expanded', 'false'); nav.classList.remove('open'); };
   menu.addEventListener('click', () => {
@@ -38,6 +39,7 @@ document.querySelectorAll('.demo-form').forEach(form => {
     result.focus();
     result.scrollIntoView({block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
   });
+  form.querySelector('.demo-fields').disabled = false;
 });
 
 document.querySelectorAll('[data-demo-channel]').forEach(link => {
@@ -54,8 +56,8 @@ if (estimate) {
     const total = selected.reduce((n, el) => n + Number(el.value), 0);
     document.getElementById('estimate-total').textContent = total.toLocaleString('ja-JP') + '円';
     document.getElementById('estimate-detail').textContent = selected.length ? selected.map(el => el.dataset.label).join('・') + '／税込・概算' : 'ご希望の清掃箇所を選んでください';
-    const target = document.querySelector('[name=message]');
-    if (target) target.value = selected.length ? '希望箇所：' + selected.map(el => el.dataset.label).join('、') + '\n概算：' + total.toLocaleString('ja-JP') + '円（税込）' : '';
+    const target = document.querySelector('[name=estimate_summary]');
+    if (target) target.value = selected.length ? '希望箇所：' + selected.map(el => el.dataset.label).join('、') + ' ／ 概算：' + total.toLocaleString('ja-JP') + '円（税込）' : '';
   };
   estimate.addEventListener('change', update);
   update();

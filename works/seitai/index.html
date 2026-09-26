@@ -221,6 +221,7 @@
 <div class="demo-note"><strong>入力体験用のフォームです。</strong><br>内容は送信・保存されません。実際の個人情報を入力せず、架空の内容でお試しください。予約は成立しません。
 </div>
 <form class="demo-form">
+<fieldset class="demo-fields" disabled><legend class="visually-hidden">入力確認デモ</legend>
  <label class="field"><span>ご用件 <b class="required">必須</b></span><select name="subject" data-summary="ご用件" required><option value="">選択してください</option><option>初回カウンセリング＋整体</option><option>2回目以降の整体</option><option>来院前の質問</option></select></label><label class="field"><span>希望する連絡方法</span><select name="channel" data-summary="連絡方法"><option value="web">WEB予約</option><option value="line">LINE予約</option><option value="phone">電話予約</option></select></label><label class="field"><span>ご希望日時</span><input name="date" type="datetime-local" data-summary="希望日時"></label>
 <div class="two"><label class="field"><span>お名前 <b class="required">必須</b></span><input name="name" autocomplete="off" data-summary="お名前" required maxlength="60"></label><label class="field"><span>メールアドレス <b class="required">必須</b></span><input name="email" type="email" autocomplete="off" required maxlength="160" aria-describedby="email-help"><small id="email-help">試用には sample@example.com をお使いください。</small></label>
 </div>
@@ -229,7 +230,7 @@
 </div><noscript>
 <p>入力確認にはJavaScriptが必要です。実際の送信は行いません。
 </p></noscript>
-</form>
+</fieldset><noscript><p>JavaScriptが無効のため、入力体験は停止しています。送信・予約は行われません。</p></noscript></form>
 </div>
 </div>
 </section>

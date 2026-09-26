@@ -204,3 +204,40 @@ a:hover{opacity:.87}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 *{transition:none!important;animation:none!important}
 }
+/* Second-pass hierarchy: an overview first, project reasoning on demand. */
+.portfolio-hero h1{font-size:clamp(2rem,3.4vw,3.2rem);line-height:1.6;letter-spacing:.015em}
+.portfolio-hero{margin:48px auto 60px}
+.featured-image{height:350px}
+.hero-secondary{display:block;width:fit-content;padding:12px 0;font-size:14px;margin-top:8px}
+.hero-footnote{font-size:12px}
+.work-index{display:grid;grid-template-columns:repeat(4,1fr);margin:0 0 20px;border-top:1px solid #bccbd6;border-left:1px solid #bccbd6}
+.work-index a{padding:18px 16px;text-decoration:none;border-right:1px solid #bccbd6;border-bottom:1px solid #bccbd6;background:#fff}
+.work-index b{font-size:14px;display:block}.work-index span{display:block;font-size:12px;margin-top:5px;color:#496173}
+.works-caption{font-size:13px;margin:0 0 35px;color:#496173}
+.work-card{scroll-margin-top:120px}.work-cover{height:255px}
+.work-detail{font-size:14px;border-top:1px solid #cdd7df;padding-top:8px}
+.work-detail summary{cursor:pointer;padding:8px 0;min-height:44px;font-weight:600}
+.work-detail dl{padding-top:10px;font-size:14px}.work-detail .work-idea{font-size:14px}
+.work-links{margin-top:10px;font-size:14px}.work-meta{font-size:12px}
+.scope-note{margin-top:35px;padding:30px;background:#eaf0f4;max-width:900px}
+.scope-note h3{font-size:18px;margin-bottom:10px}.scope-note p{font-size:14px}.scope-note h3:not(:first-child){margin-top:28px}
+.contact-sample{display:block;max-width:760px}.contact-sample label{display:block;font-size:14px;margin-bottom:14px}
+.contact-sample textarea{width:100%;padding:15px;background:#f9fbfc;color:#20394d;border:1px solid #bccbd6;font:14px/1.8 sans-serif;resize:vertical;border-radius:0}
+.contact-sample button{font:600 14px/1.6 sans-serif;padding:13px 20px;min-height:48px;margin:15px 0;background:white;color:#20394d;border:0;cursor:pointer}
+.contact-sample p{font-size:13px;margin:0}.contact-sample textarea:focus-visible,summary:focus-visible{outline:3px solid #d26423;outline-offset:4px}
+@media(max-width:700px){
+.portfolio-header{flex-wrap:wrap;gap:10px;padding:12px 20px}
+.portfolio-header .logo small{display:none}.portfolio-header nav{width:100%;justify-content:space-between;gap:8px}
+.portfolio-header nav a{font-size:12px;min-height:44px;display:flex;align-items:center}
+.portfolio-header nav a[href='#about'],.portfolio-header nav a[href='#price']{display:flex}
+.portfolio-header .contact-link{padding:9px 12px}
+html{scroll-padding-top:135px}.portfolio-hero{margin:28px auto 38px;gap:24px}.portfolio-hero h1{font-size:29px}
+.hero-description{font-size:15px}.hero-description br{display:none}.hero-feature{display:none}
+.hero-footnote{font-size:11px}.primary-link{font-size:14px}.section-intro h2{font-size:27px}
+.work-index{grid-template-columns:1fr 1fr}.work-index a{padding:14px 10px}.work-index span{font-size:11px}.work-index b{font-size:13px}
+.work-detail dl>div{font-size:13px}.work-meta{font-size:11px}.work-cover{height:250px}.scope-note{padding:23px}
+.profile-section dl>div{font-size:14px}.price-note,.sample-explainer{font-size:13px}.work-card{scroll-margin-top:135px}
+}
+@media(max-width:360px){.portfolio-hero h1{font-size:25px}.work-links{font-size:12px}.work-meta{display:block}.work-cover p{font-size:24px!important}}
+
+.mobile-break{display:none}@media(max-width:700px){.mobile-break{display:block}}
