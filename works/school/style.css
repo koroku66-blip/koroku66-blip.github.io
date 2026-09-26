@@ -1,0 +1,64 @@
+:root{--ink:#223958;--paper:#fff;--sub:#596a7c;--soft:#f1f5f9;--line:#ccd7e2;--accent:#254b85}
+.brand{font-size:24px}
+.brand small{font-size:9px;letter-spacing:.16em}
+.school-hero{padding:65px 0;background:#f9f8ed;border-bottom:1px solid #e5e1c9}
+.school-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:50px;align-items:center}
+.school-hero h1{font-size:clamp(2rem,3.1vw,3rem);font-weight:700;line-height:1.8}
+.school-hero mark{background:linear-gradient(transparent 65%,#f0d674 65%);color:inherit;padding:0 2px}
+.school-hero p:not(.eyebrow){margin-top:24px;font-size:15px}
+.school-grid figure{position:relative;padding-bottom:75px}
+.school-grid img{height:390px;object-fit:cover;object-position:center}
+.school-grid figcaption{position:absolute;bottom:0;left:25px;right:-12px;padding:25px;background:#f0d674;box-shadow:6px 6px 0 #233c5b}
+.school-grid figcaption span{font-size:12px;display:block;border-bottom:1px solid #a39760;padding-bottom:8px;margin-bottom:10px}
+.school-grid figcaption strong{font-size:22px;line-height:1.6}
+.school-grid figcaption small{display:block;font-size:12px;margin-top:10px}
+.learning-sequence{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+.learning-sequence article{border-top:4px solid #e1bf42;padding-top:22px}
+.learning-sequence span{font:12px monospace;color:#5c6c7e}
+.learning-sequence h3{font-size:21px;margin:20px 0}
+.learning-sequence p{font-size:15px}
+.school-soft{background:var(--soft)}
+.school-course-preview{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-bottom:20px}
+.school-course-preview a{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:30px;background:#fff;text-decoration:none;border-bottom:4px solid #254b85}
+.school-course-preview span{font-size:12px}
+.school-course-preview h3{font-size:23px;margin:12px 0}
+.school-course-preview p{font-size:13px}
+.school-course-preview b{font-size:21px;white-space:nowrap}
+.school-course-preview small{font-size:12px;display:block;font-weight:400}
+.study-plan{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.study-plan h3{font-size:24px;margin-bottom:25px}
+.study-plan ol{list-style:none;padding:0;margin:0}
+.study-plan li{display:flex;gap:25px;padding:18px 0;border-bottom:1px solid var(--line)}
+.study-plan b{width:65px;flex-shrink:0;font-size:14px}
+.study-plan span{font-size:15px}
+.course-detail{display:grid;grid-template-columns:1.5fr 1fr;gap:60px;align-items:center}
+.grade{font-size:13px;color:var(--accent);margin-bottom:15px}
+.course-detail h3{font-size:25px;margin-bottom:20px}
+.course-fee{padding:35px;background:#233c5b;color:white}
+.course-fee strong{font-size:42px;display:block;margin:15px 0}
+.course-fee strong span{font-size:14px}
+.course-fee p,.course-fee small{font-size:14px}
+.band{background:#f3dd89}
+.button{border-radius:4px}
+.page-head{background:#f9f8ed}
+.school-course-preview a:hover{box-shadow:0 4px 15px #152c4510}
+@media(max-width:760px){.school-hero{padding:35px 0 50px}
+.school-grid{grid-template-columns:1fr;gap:30px}
+.school-hero h1{font-size:27px}
+.school-hero p:not(.eyebrow) br{display:none}
+.school-grid figure{padding-bottom:45px}
+.school-grid img{height:255px}
+.school-grid figcaption{left:40px;right:0;padding:20px}
+.school-grid figcaption strong{font-size:19px}
+.learning-sequence{grid-template-columns:1fr;gap:30px}
+.learning-sequence h3{margin:12px 0;font-size:21px}
+.school-course-preview{grid-template-columns:1fr}
+.school-course-preview a{padding:23px;gap:10px}
+.school-course-preview h3{font-size:21px}
+.school-course-preview b{font-size:18px}
+.study-plan{grid-template-columns:1fr;gap:25px}
+.course-detail{grid-template-columns:1fr;gap:30px}
+.course-fee{padding:25px}
+.brand{font-size:21px}
+.study-plan li{gap:12px}
+}

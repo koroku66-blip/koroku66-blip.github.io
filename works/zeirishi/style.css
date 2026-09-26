@@ -1,0 +1,46 @@
+:root{--navy:#1c2a45;--gold:#8a693e;--paper:#f7f5f0;--ink:#1f2b40;--sub:#5f6671;--line:#d8d6d0;--soft:#eeece6;--accent:#1c2a45}
+.brand,h1,h2{font-family:'Yu Mincho',serif}
+.brand{font-size:22px}
+.eyebrow{color:var(--gold)}
+.tax-hero{padding:90px 0 85px}
+.tax-hero>.wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:65px;align-items:center}
+.tax-hero h1{font-size:clamp(2.5rem,4vw,3.7rem);line-height:1.65}
+.tax-hero .lead{font-size:16px;margin:26px 0 32px}
+.tax-memo{padding:45px 35px;background:var(--navy);color:#fff;outline:1px solid #bda780;outline-offset:-12px}
+.tax-memo .memo-label{font-size:13px;letter-spacing:.15em;color:#e6d3b0}
+.tax-memo h2{font-size:27px;margin:20px 0}
+.tax-memo ul{list-style:none;margin:0;padding:0;font-size:14px}
+.tax-memo li{border-top:1px solid #ffffff30;padding:12px 0}
+.tax-memo>p:last-child{font-size:13px;margin-top:25px;color:#e5e3de}
+.tax-soft{background:var(--soft)}
+.button{padding:14px 27px}
+.feature-row{grid-template-columns:60px 1fr 1.15fr}
+.number{color:var(--gold)!important}
+.feature-row h3{font-family:'Yu Mincho',serif;font-size:24px}
+.feature-row p{font-size:15px}
+.tax-letter{max-width:750px;margin:auto;font-family:'Yu Mincho',serif;font-size:19px;line-height:2.3}
+.tax-letter .small{font-family:sans-serif;font-size:13px}
+.annual-example{margin-top:40px;padding:40px;background:var(--navy);color:white}
+.annual-example .eyebrow{color:#e6d3b0}
+.annual-number{font-size:23px;margin-top:20px;line-height:1.8}
+.annual-number strong{font-size:32px;font-weight:500}
+.annual-example .small{margin-top:18px}
+.band{border-top:1px solid var(--line)}
+.data-table th{min-width:150px}
+@media(max-width:760px){.tax-hero{padding:45px 0 55px}
+.tax-hero>.wrap{grid-template-columns:1fr;gap:35px}
+.tax-hero h1{font-size:31px}
+.tax-hero .lead br{display:none}
+.tax-memo{padding:35px}
+.tax-memo h2 br{display:none}
+.tax-memo h2{font-size:23px}
+.feature-row{grid-template-columns:42px 1fr;gap:15px}
+.feature-row>p{grid-column:2}
+.annual-example{padding:25px}
+.annual-number{font-size:17px}
+.annual-number strong{font-size:25px}
+.brand{font-size:19px}
+.tax-letter{font-size:17px}
+.data-table{min-width:570px}
+}
+.nobr{display:inline-block}

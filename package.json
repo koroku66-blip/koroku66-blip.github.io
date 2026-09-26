@@ -1,0 +1,1 @@
+{"name":"morisaki-portfolio","private":true,"scripts":{"dev":"vite --host 0.0.0.0 --port 4173"},"devDependencies":{"vite":"^7.0.0"}}

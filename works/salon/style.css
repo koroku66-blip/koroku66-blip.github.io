@@ -1,0 +1,71 @@
+:root{--ink:#282826;--paper:#fff;--sub:#64645e;--soft:#f2f1ef;--line:#d7d6d1;--accent:#30342f}
+.site-header{position:relative}
+.brand{font-family:Georgia,serif;font-size:42px;font-weight:400;letter-spacing:-.05em}
+.brand small{font-family:sans-serif;font-size:9px;letter-spacing:.22em}
+.header-inner{min-height:105px}
+.nav{gap:40px}
+.nav a{font-family:Georgia,serif;font-size:17px}
+.nav .nav-cta{background:transparent;color:var(--ink);border-bottom:1px solid var(--ink);padding:8px 0}
+.salon-hero{width:min(1300px,calc(100% - 80px));margin:30px auto 70px;display:grid;grid-template-columns:1.1fr 1fr 35px;gap:35px;min-height:610px}
+.salon-title{padding:55px 0 0 35px;position:relative}
+.salon-title h1{font-family:'Yu Mincho',serif;font-weight:400;font-size:clamp(2rem,3.5vw,3.4rem);line-height:1.9}
+.salon-title>p:not(.eyebrow):not(.salon-sign){font-size:15px;margin:28px 0}
+.salon-hero figure{position:relative}
+.salon-hero figure img{height:610px;object-fit:cover;object-position:center 43%}
+.salon-hero figcaption{font-size:10px;letter-spacing:.2em;padding-top:12px}
+.salon-sign{font:italic 90px Georgia,serif;color:#74756b;margin-top:40px}
+.salon-side{writing-mode:vertical-rl;font-size:11px;letter-spacing:.25em;padding-top:8px}
+.eyebrow{font-size:11px;font-weight:400}
+.salon-statement{max-width:700px;margin-left:auto;font-family:'Yu Mincho',serif;font-size:19px;line-height:2.35}
+.salon-statement p+p{margin-top:30px}
+.salon-soft{background:var(--soft)}
+.salon-menu-preview{display:grid;grid-template-columns:repeat(3,1fr);gap:45px;margin-bottom:25px}
+.salon-menu-preview>div{border-top:1px solid var(--ink);padding-top:25px}
+.salon-menu-preview span{font:14px Georgia,serif}
+.salon-menu-preview h3{font:44px Georgia,serif;margin:25px 0 15px}
+.salon-menu-preview p{font-size:13px}
+.salon-menu-preview strong{font:24px Georgia,serif;display:block;margin-top:20px}
+.salon-soft .button{margin-top:30px}
+.salon-booking{background:#30342f;color:white;padding:90px 0;text-align:center}
+.salon-booking .eyebrow{color:#c9ccc3}
+.salon-booking h2{font-family:'Yu Mincho',serif;font-size:35px}
+.salon-booking p{margin:25px 0}
+.salon-booking .button{background:white;color:#30342f;border-color:white}
+.salon-price-section{display:grid;grid-template-columns:1fr 2fr;gap:60px}
+.salon-price-section h2{font:55px Georgia,serif}
+.salon-price-row{border-top:1px solid var(--line);padding:25px 0;display:flex;justify-content:space-between;gap:30px}
+.salon-price-row h3{font-size:17px;font-weight:500}
+.salon-price-row p{font-size:13px;margin-top:8px}
+.salon-price-row strong{white-space:nowrap;font-size:20px;font-weight:400}
+.salon-price-row small{display:block;font-size:12px;text-align:right;margin-top:8px}
+.salon-info-photo figure{max-height:520px;overflow:hidden}
+.salon-info-photo img{height:100%;object-fit:cover}
+.section-head h2{font-family:'Yu Mincho',serif;font-weight:400}
+.page-head{background:#fff}
+.page-head h1{font-family:Georgia,serif;font-size:60px;font-weight:400}
+.band{border-top:1px solid var(--line)}
+@media(max-width:760px){.header-inner{min-height:90px}
+.brand{font-size:35px}
+.salon-hero{width:calc(100% - 40px);grid-template-columns:1fr 20px;gap:14px;margin:0 auto 40px}
+.salon-title{grid-column:1 / -1;padding:28px 0 15px}
+.salon-title h1{font-size:28px}
+.salon-title>p:not(.eyebrow):not(.salon-sign){font-size:14px}
+.salon-sign{display:none}
+.salon-hero figure img{height:380px;object-position:50% 40%}
+.salon-statement{font-size:17px}
+.salon-menu-preview{grid-template-columns:1fr;gap:28px}
+.salon-menu-preview>div{display:grid;grid-template-columns:30px 1fr auto;align-items:center;gap:10px}
+.salon-menu-preview h3{font-size:32px;margin:0}
+.salon-menu-preview p{grid-column:2;grid-row:2}
+.salon-menu-preview strong{grid-column:3;grid-row:1;margin:0;font-size:22px}
+.salon-price-section{grid-template-columns:1fr;gap:30px}
+.salon-price-section h2{font-size:42px}
+.salon-price-row{gap:15px}
+.salon-price-row strong{font-size:18px}
+.salon-booking{padding:65px 0}
+.salon-booking h2{font-size:28px}
+.salon-info-photo figure{height:300px}
+.page-head h1{font-size:41px}
+.nav{background:white}
+.nav .nav-cta{margin:0;text-align:left}
+}

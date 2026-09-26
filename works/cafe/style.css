@@ -1,0 +1,66 @@
+:root{--ink:#3c3027;--paper:#faf8f1;--sub:#74695e;--soft:#efeadc;--line:#d1c8b7;--accent:#60452e}
+body{font-family:'Yu Mincho',serif}
+.brand{font-size:25px;letter-spacing:.15em}
+.brand small{font:10px sans-serif;letter-spacing:.2em}
+.site-header{position:relative;border-bottom:1px solid var(--line)}
+.nav a{font-size:15px}
+.nav .nav-cta{background:transparent;color:var(--ink);padding:12px 0}
+.cafe-hero{display:grid;grid-template-columns:1.35fr 1fr;min-height:620px;max-width:1500px;margin:auto}
+.cafe-photo img{height:620px;object-fit:cover;object-position:center 55%}
+.cafe-intro{padding:65px 50px 60px 65px;position:relative}
+.cafe-intro h1{font-size:clamp(3.2rem,5vw,4.8rem);line-height:1.45;font-weight:500;letter-spacing:.16em}
+.cafe-intro>p:not(.eyebrow){margin:25px 0;font-size:16px;line-height:2.2}
+.cafe-seal{position:absolute;right:40px;bottom:50px;border:1px solid #896545;color:#896545;border-radius:50%;width:66px;height:66px;text-align:center;display:grid;place-content:center;font-size:16px;line-height:1.6}
+.eyebrow{font-family:sans-serif;letter-spacing:.2em;font-size:11px;font-weight:400}
+.button{font-size:14px;font-weight:400;min-height:48px}
+.cafe-hours-strip{background:#3c3027;color:#f4eee1}
+.cafe-hours-strip .wrap{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:20px 0}
+.cafe-hours-strip p{font-family:Georgia,serif;letter-spacing:.04em}
+.cafe-hours-strip span{font-family:'Yu Mincho',serif;font-size:13px;margin-left:22px}
+.cafe-hours-strip a{font-size:13px}
+.cafe-story{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
+.cafe-story h2{font-size:33px;line-height:1.8;margin-bottom:28px}
+.cafe-story p{line-height:2.2}
+.cafe-story figure{width:85%;margin-left:auto}
+.cafe-story img{height:440px;object-fit:cover;object-position:center}
+.cafe-story figcaption{font-size:12px;margin-top:10px}
+.cafe-paper{background:var(--soft)}
+.cafe-chalk{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin:30px 0}
+.cafe-chalk>div{border-top:2px solid var(--ink);padding-top:28px}
+.cafe-chalk p{font-size:13px}
+.cafe-chalk h3{font-size:22px;margin:20px 0}
+.cafe-chalk span{font-size:22px}
+.cafe-paper .button{margin-top:30px}
+.cafe-menu-list{max-width:850px;margin-left:auto}
+.cafe-menu-list article{display:flex;justify-content:space-between;gap:25px;border-bottom:1px dotted #998b78;padding:27px 0}
+.cafe-menu-list h3{font-weight:500;font-size:22px}
+.cafe-menu-list p{font-size:14px;color:var(--sub);margin-top:8px}
+.cafe-menu-list strong{font-weight:400;white-space:nowrap;font-size:21px}
+.cafe-visit-photo{max-height:600px;overflow:hidden}
+.cafe-visit-photo img{height:100%;object-fit:cover}
+.page-head{background:var(--soft)}
+.band{border-top:1px solid var(--line)}
+@media(max-width:760px){.cafe-hero{grid-template-columns:1fr;min-height:0}
+.cafe-photo img{height:300px;object-position:center 53%}
+.cafe-intro{padding:38px 25px 45px}
+.cafe-intro h1{font-size:44px}
+.cafe-intro h1 br{display:block}
+.cafe-intro>p:not(.eyebrow){font-size:15px}
+.cafe-seal{right:30px;bottom:50px}
+.cafe-hours-strip .wrap{flex-wrap:wrap;gap:8px}
+.cafe-hours-strip p{font-size:15px}
+.cafe-hours-strip span{font-size:12px;margin-left:12px}
+.cafe-story{grid-template-columns:1fr;gap:35px}
+.cafe-story h2{font-size:28px}
+.cafe-story figure{width:100%}
+.cafe-story img{height:320px}
+.cafe-chalk{grid-template-columns:1fr;gap:25px}
+.cafe-chalk>div{display:grid;grid-template-columns:1fr auto;padding-top:18px}
+.cafe-chalk p{grid-column:1 / -1}
+.cafe-chalk h3{margin:8px 0;font-size:20px}
+.cafe-chalk span{align-self:center;font-size:19px}
+.cafe-menu-list h3{font-size:18px}
+.cafe-menu-list strong{font-size:18px}
+.cafe-visit-photo{height:320px}
+.brand{font-size:22px}
+}

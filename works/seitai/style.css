@@ -1,0 +1,43 @@
+:root{--ink:#243f36;--sub:#556b62;--paper:#fff;--soft:#eef4f0;--line:#cedbd3;--accent:#28634f}
+.brand{font-family:'Yu Mincho',serif;font-size:25px}
+.clinic-hero{padding:55px 0 65px;background:#f6f8f5}
+.clinic-grid{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:40px}
+.clinic-copy h1{font-family:'Yu Mincho',serif;font-size:clamp(2rem,3.1vw,3rem);line-height:1.75;letter-spacing:.04em}
+.clinic-copy>p{margin-top:22px;font-size:16px}
+.clinic-copy>.eyebrow{margin-top:0;font-size:13px}
+.clinic-grid figure img{height:470px;object-fit:cover;border-radius:140px 4px 4px 4px}
+.clinic-grid figcaption{font-size:12px;text-align:right;margin-top:10px}
+.clinic-info{border-bottom:1px solid var(--line)}
+.clinic-info .wrap{display:flex;justify-content:space-between;gap:20px;padding:22px 0;font-size:14px}
+.button,.nav .nav-cta{border-radius:5px}
+.clinic-soft{background:var(--soft)}
+.clinic-notice{border-top:1px solid var(--line);margin-top:30px;padding-top:25px;font-size:14px}
+.clinic-notice h3{font-size:16px;margin-bottom:8px}
+.clinic-prices{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:24px}
+.clinic-prices article{background:white;padding:36px}
+.clinic-prices h3{margin:15px 0}
+.price{font-family:Georgia,serif;font-size:44px;line-height:1.5;margin:15px 0}
+.price span{font-size:14px;margin-left:12px}
+.clinic-hours{padding:25px;background:var(--soft)}
+.clinic-hours h3{margin-bottom:20px}
+.clinic-hours .data-table th,.clinic-hours .data-table td{padding:15px 6px;font-size:13px}
+.channel-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:35px 0}
+.channel-row a{padding:22px;text-decoration:none;background:white;border:1px solid var(--accent);font-weight:600}
+.channel-row small{display:block;font-size:13px;font-weight:400}
+.demo-form{max-width:none}
+.clinic-soft .demo-note{background:white}
+@media(max-width:760px){.clinic-grid{grid-template-columns:1fr;gap:25px}
+.clinic-hero{padding:32px 0}
+.clinic-copy h1{font-size:27px}
+.clinic-copy p br{display:none}
+.clinic-grid figure img{height:270px;border-radius:70px 3px 3px 3px}
+.clinic-info .wrap{flex-wrap:wrap;justify-content:flex-start;gap:8px 20px;font-size:12px}
+.clinic-prices{grid-template-columns:1fr}
+.clinic-prices article{padding:25px}
+.channel-row{gap:8px}
+.channel-row a{padding:16px 10px;font-size:14px}
+.channel-row small{font-size:11px}
+.clinic-hours{padding:18px}
+}
+.clinic-hours .data-table th,.clinic-hours .data-table td{min-width:0}
+.clinic-hours .data-table th:first-child{width:40%}

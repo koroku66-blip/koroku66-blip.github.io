@@ -1,483 +1,377 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>ことは工務店｜家族の「ことば」から建てる、みなと市の木の家</title>
-<meta name="description" content="みなと市の工務店「ことは工務店」。家族の何気ないことばを間取りにする注文住宅とリフォーム。自社大工・耐震等級3・完成見学会開催中。">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Klee+One:wght@600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#FBFAF6; --ink:#2A2925; --sub:#6E6A60; --line:#DCD6CA;
-  --leaf:#4B6A3A; --leaf-lt:#E4EBDC; --kaki:#D4602F; --kaki-dk:#B24D22;
-  --asa:#F4EFE2; --hiru:#E9F0EC; --yu:#F5E1D0; --yoru:#1F2830;
-  --mincho:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
-  --gothic:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
-  --hand:"Klee One","Hiragino Maru Gothic ProN",sans-serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-[id]{scroll-margin-top:84px}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--gothic);font-size:15px;line-height:1.95;letter-spacing:.04em;transition:background-color .8s}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-h1,h2,h3{margin:0;font-weight:800;line-height:1.5}
-p{margin:0}
-.inner{max-width:1160px;margin:0 auto;padding:0 20px}
-:focus-visible{outline:2px solid var(--kaki);outline-offset:3px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
-.notice{background:var(--ink);color:#fff;font-size:11px;text-align:center;padding:4px 12px}
-
-/* ===== header ===== */
-header{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.hd{display:flex;align-items:center;gap:20px;height:68px}
-.logo{display:flex;align-items:center;gap:10px}
-.logo svg{width:34px;height:34px}
-.logo b{font-family:var(--mincho);font-size:21px;letter-spacing:.12em}
-.gnav{display:flex;gap:22px;margin-left:auto;font-size:13px;font-weight:500}
-.gnav a:hover{color:var(--leaf)}
-.hbtns{display:flex;gap:8px}
-.hbtn{padding:9px 16px;border-radius:30px;font-size:13px;font-weight:700;color:#fff;background:var(--leaf)}
-.hbtn.k{background:var(--kaki)}
-@media (max-width:1020px){.gnav{display:none}.hbtns{margin-left:auto}}
-@media (max-width:560px){.hbtns .hbtn:first-child{display:none}.hbtn{padding:8px 14px}}
-
-/* ===== hero ===== */
-.hero{position:relative;padding:48px 0 72px;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:start}
-.hero-copy{white-space:nowrap;writing-mode:vertical-rl;font-family:var(--mincho);font-size:clamp(28px,3.6vw,46px);font-weight:800;line-height:1.75;letter-spacing:.18em;height:min(560px,70vh);min-height:400px}
-.hero-copy .s{display:block;font-size:.42em;letter-spacing:.3em;color:var(--sub);font-weight:600;margin-left:1.2em}
-.hero-photos{position:relative;height:min(600px,74vh);min-height:420px}
-.hero-photos figure{position:absolute;margin:0;overflow:hidden;border-radius:4px;box-shadow:0 10px 30px rgba(40,35,25,.15)}
-.hero-photos figure img{width:100%;height:100%;object-fit:cover}
-.hp1{inset:0 18% 18% 0}
-.hp2{width:38%;height:44%;right:0;bottom:0}
-.hp3{width:26%;height:30%;right:4%;top:6%}
-.note{position:absolute;left:4%;bottom:6%;z-index:3;background:#fff;padding:14px 18px 12px;border-radius:2px;box-shadow:0 6px 18px rgba(0,0,0,.12);font-family:var(--hand);font-size:15px;line-height:1.7;transform:rotate(-2deg);max-width:300px}
-.note::before{content:"";position:absolute;top:-10px;left:50%;width:70px;height:20px;margin-left:-35px;background:rgba(212,96,47,.35);transform:rotate(3deg)}
-.note small{display:block;font-size:11px;color:var(--sub);text-align:right}
-@media (max-width:760px){
-  .hero{padding:24px 0 48px}
-  .hero-grid{grid-template-columns:1fr;gap:20px}
-  .hero-copy{height:auto;min-height:0;writing-mode:horizontal-tb;font-size:30px;line-height:1.6;letter-spacing:.08em}
-  .hero-copy .s{margin:10px 0 0;font-size:13px;letter-spacing:.12em}
-  .hero-photos{height:440px;min-height:0}
-  .hp3{display:none}
-}
-.marquee{overflow:hidden;white-space:nowrap;border-block:1px solid var(--line);padding:10px 0;font-family:var(--mincho);font-size:clamp(20px,3vw,34px);color:var(--leaf)}
-.marquee span{display:inline-block;animation:mq 40s linear infinite;padding-right:2em}
-@keyframes mq{to{transform:translateX(-50%)}}
-
-/* ===== section head (vertical) ===== */
-.sec{padding:110px 0}
-@media (max-width:760px){.sec{padding:72px 0}}
-.sh{display:flex;gap:22px;align-items:flex-start;margin-bottom:48px}
-.sh h2{white-space:nowrap;writing-mode:vertical-rl;font-family:var(--mincho);font-size:clamp(24px,2.6vw,32px);letter-spacing:.2em;line-height:1.4;flex-shrink:0}
-.sh .lead{max-width:34em;padding-top:6px}
-.sh .lead .en{display:block;font-size:12px;letter-spacing:.3em;color:var(--kaki);font-weight:700;margin-bottom:10px}
-.sh .lead p{color:var(--sub)}
-.sh .lead strong{display:block;font-family:var(--mincho);font-size:clamp(20px,2.2vw,26px);color:var(--ink);margin-bottom:12px;line-height:1.6}
-
-/* ===== plan (signature) ===== */
-.plan-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
-@media (max-width:900px){.plan-wrap{grid-template-columns:1fr}}
-.plan{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px}
-.plan svg{width:100%;height:auto;display:block}
-.plan .room{cursor:pointer}
-.plan .room rect{fill:#fff;stroke:var(--ink);stroke-width:2.5;transition:fill .25s}
-.plan .room:hover rect,.plan .room:focus rect{fill:var(--leaf-lt)}
-.plan .room[aria-pressed="true"] rect{fill:var(--leaf);}
-.plan .room[aria-pressed="true"] text{fill:#fff}
-.plan .room text{font-family:var(--gothic);font-size:15px;font-weight:700;fill:var(--ink);pointer-events:none}
-.plan .room .w{font-family:var(--hand);font-size:12px;font-weight:600}
-.plan .room:focus{outline:none}
-.plan .room:focus-visible rect{stroke:var(--kaki);stroke-width:4}
-.plan .deck rect{fill:#F4F1EA}
-.plan-cap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--sub);margin-top:10px}
-.room-card{background:#fff;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
-.room-card .ph{aspect-ratio:3/2;overflow:hidden;background:var(--leaf-lt)}
-.room-card .ph img{width:100%;height:100%;object-fit:cover}
-.room-card .bd{padding:22px 24px 26px}
-.room-card .nm{font-size:12px;color:var(--kaki);font-weight:700;letter-spacing:.15em}
-.room-card blockquote{margin:6px 0 0;font-family:var(--hand);font-size:clamp(19px,2vw,23px);line-height:1.6}
-.room-card .who{font-size:12px;color:var(--sub);margin-top:6px}
-.room-card .dz{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);font-size:14px}
-.room-card .dz b{display:block;font-size:12px;color:var(--leaf);letter-spacing:.1em}
-
-/* ===== report card ===== */
-.report{background:#fff;border:2px solid var(--ink);border-radius:4px;max-width:880px;margin:0 auto;position:relative}
-.report-hd{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:18px 24px;border-bottom:2px solid var(--ink)}
-.report-hd h3{font-family:var(--mincho);font-size:22px;letter-spacing:.3em}
-.report-hd span{font-size:12px;color:var(--sub)}
-.rtbl{width:100%;border-collapse:collapse}
-.rtbl th,.rtbl td{padding:16px 20px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
-.rtbl tr:last-child th,.rtbl tr:last-child td{border-bottom:0}
-.rtbl th{width:26%;font-weight:700;font-size:15px}
-.rtbl .gr{width:130px;font-family:var(--mincho);font-size:28px;font-weight:800;color:var(--kaki);white-space:nowrap}
-.rtbl .gr small{font-size:13px;color:var(--sub);font-family:var(--gothic);font-weight:400}
-.rtbl td:last-child{font-size:13px;color:var(--sub)}
-.hanko{position:absolute;right:26px;bottom:-26px;width:84px;height:84px;border-radius:50%;border:3px solid var(--kaki);color:var(--kaki);display:grid;place-items:center;text-align:center;font-family:var(--mincho);font-weight:800;font-size:14px;line-height:1.3;transform:rotate(-12deg);background:rgba(255,255,255,.85)}
-@media (max-width:640px){.rtbl th,.rtbl td{display:block;width:auto;padding:4px 18px}.rtbl th{padding-top:16px}.rtbl td:last-child{padding-bottom:16px;border-bottom:1px solid var(--line)}.rtbl th,.rtbl .gr{border-bottom:0}}
-
-/* ===== one day ===== */
-.day{display:grid;gap:0}
-.slot{display:grid;grid-template-columns:120px 1fr 1fr;gap:40px;align-items:center;padding:56px 0;border-top:1px solid rgba(0,0,0,.08)}
-@media (max-width:860px){.slot{grid-template-columns:1fr;gap:16px;padding:40px 0}}
-.slot .tm{font-family:var(--mincho);font-size:44px;font-weight:800;line-height:1}
-.slot .tm small{display:block;font-size:14px;font-family:var(--gothic);font-weight:500;margin-top:8px;letter-spacing:.2em}
-.slot .ph{aspect-ratio:16/10;overflow:hidden;border-radius:4px}
-.slot .ph img{width:100%;height:100%;object-fit:cover}
-.slot h3{font-family:var(--mincho);font-size:22px}
-.slot p{margin-top:12px}
-.slot .pt{display:inline-block;margin-top:14px;font-size:12px;border:1px solid currentColor;border-radius:20px;padding:2px 12px}
-#day{transition:background-color .8s,color .8s;background:var(--asa);padding-bottom:24px}
-#day[data-t="hiru"]{background:var(--hiru)}
-#day[data-t="yu"]{background:var(--yu)}
-#day[data-t="yoru"]{background:var(--yoru);color:#EDE9E0}
-#day[data-t="yoru"] .sh .lead p{color:#B9B4A8}
-
-/* ===== carpenter ===== */
-.daiku{display:grid;grid-template-columns:1.2fr 1fr;gap:0;background:var(--leaf);color:#F4F1E8}
-@media (max-width:860px){.daiku{grid-template-columns:1fr}}
-.daiku .ph{min-height:420px}
-.daiku .ph img{width:100%;height:100%;object-fit:cover}
-.daiku .tx{padding:64px clamp(24px,5vw,72px);display:flex;gap:28px;align-items:flex-start}
-.daiku .vt{white-space:nowrap;writing-mode:vertical-rl;font-family:var(--mincho);font-size:clamp(22px,2.4vw,30px);line-height:1.8;letter-spacing:.15em;flex-shrink:0;max-height:360px}
-.daiku p{color:#E3EAD9;font-size:14px}
-.daiku .sig{margin-top:18px;font-family:var(--hand);font-size:18px;color:#fff}
-.daiku ul{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:6px;font-size:13px}
-.daiku li{border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:6px;display:flex;justify-content:space-between;gap:12px}
-@media (max-width:560px){.daiku .tx{flex-direction:column}.daiku .vt{writing-mode:horizontal-tb;max-height:none}}
-
-/* ===== works ===== */
-.works{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px}
-.wk{flex:0 0 min(360px,82%);scroll-snap-align:start}
-.wk .ph{aspect-ratio:4/5;overflow:hidden;border-radius:4px;position:relative}
-.wk .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-.wk:hover .ph img{transform:scale(1.04)}
-.wk .qt{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(255,255,255,.94);padding:10px 14px;font-family:var(--hand);font-size:15px;line-height:1.6;border-radius:2px}
-.wk .mt{display:flex;gap:10px;margin-top:12px;font-size:12px;color:var(--sub)}
-.wk .mt b{color:var(--leaf)}
-.wk h3{font-size:17px;margin-top:2px;font-family:var(--mincho)}
-.scroll-hint{font-size:12px;color:var(--sub);text-align:right;margin-top:6px}
-
-/* ===== event / cta ===== */
-.ev{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-@media (max-width:760px){.ev{grid-template-columns:1fr}}
-.ev-card{display:grid;grid-template-columns:120px 1fr;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden}
-.ev-date{background:var(--kaki);color:#fff;text-align:center;padding:18px 8px;font-family:var(--mincho);font-weight:800}
-.ev-date b{display:block;font-size:34px;line-height:1.1}
-.ev-date span{font-size:12px}
-.ev-card.g .ev-date{background:var(--leaf)}
-.ev-bd{padding:16px 18px}
-.ev-bd .tg{font-size:11px;font-weight:700;color:var(--kaki);letter-spacing:.1em}
-.ev-card.g .ev-bd .tg{color:var(--leaf)}
-.ev-bd h3{font-size:16px;margin-top:2px}
-.ev-bd p{font-size:13px;color:var(--sub);margin-top:4px}
-.cta{margin-top:56px;background:var(--leaf);color:#fff;border-radius:8px;padding:48px 24px;text-align:center;position:relative;overflow:hidden}
-.cta h2{font-family:var(--mincho);font-size:clamp(22px,2.8vw,30px)}
-.cta p{margin-top:8px;opacity:.9}
-.cta-btns{display:flex;justify-content:center;gap:14px;margin-top:26px;flex-wrap:wrap}
-.cbtn{min-width:240px;padding:16px 24px;border-radius:40px;font-weight:700;font-size:16px}
-.cbtn.w{background:#fff;color:var(--leaf)}
-.cbtn.k{background:var(--kaki);color:#fff}
-.cta .tel{margin-top:22px;font-size:13px}
-.cta .tel b{font-family:var(--mincho);font-size:28px;display:block;letter-spacing:.08em}
-
-/* ===== contact ===== */
-.contact{display:grid;grid-template-columns:1fr 1.4fr;gap:48px}
-@media (max-width:860px){.contact{grid-template-columns:1fr}}
-.hear{align-self:start;background:#fff;border:1px solid var(--line);border-radius:6px;padding:28px}
-.hear h3{font-family:var(--mincho);font-size:19px}
-.hear p{font-size:14px;color:var(--sub);margin-top:8px}
-.form{display:grid;gap:18px}
-.fld{display:grid;gap:6px}
-.fld label,.fld .lb{font-size:14px;font-weight:700}
-.rq{font-size:11px;color:#fff;background:var(--kaki);border-radius:3px;padding:0 6px;margin-left:6px;font-weight:500}
-.fld input[type=text],.fld input[type=email],.fld textarea{font:inherit;font-size:16px;padding:12px;border:1px solid #CBC4B6;border-radius:4px;background:#fff;width:100%}
-.fld textarea{min-height:120px;font-family:var(--hand);font-size:17px;background:repeating-linear-gradient(#fff,#fff 33px,#E9E4DA 33px,#E9E4DA 34px);line-height:34px;padding-top:0}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips label{font-weight:500;font-size:13px;border:1px solid var(--line);border-radius:20px;padding:6px 14px;cursor:pointer;background:#fff}
-.chips input{position:absolute;opacity:0;pointer-events:none}
-.chips input:checked+span{color:var(--leaf);font-weight:700}
-.chips label:has(input:checked){border-color:var(--leaf);background:var(--leaf-lt)}
-.chips label:has(input:focus-visible){outline:2px solid var(--kaki)}
-.send{justify-self:start;font:inherit;font-weight:700;font-size:16px;color:#fff;background:var(--kaki);border:0;border-radius:40px;padding:15px 52px;cursor:pointer}
-.send:hover{background:var(--kaki-dk)}
-.msg{font-size:14px}.msg.err{color:#B3261E}.msg.ok{color:var(--leaf)}
-
-/* ===== company / footer ===== */
-.co{display:grid;grid-template-columns:1fr 1fr;gap:40px;font-size:14px}
-@media (max-width:760px){.co{grid-template-columns:1fr}}
-.co dl{display:grid;grid-template-columns:7em 1fr;margin:0}
-.co dt,.co dd{padding:12px 0;border-bottom:1px solid var(--line);margin:0}
-.co dt{color:var(--sub)}
-footer{background:var(--ink);color:#C9C4B8;padding:48px 0;font-size:12px}
-.ft{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-end}
-.ft .logo b{color:#fff}
-.sp-bar{display:none}
-@media (max-width:560px){
-  .sp-bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60}
-  .sp-bar a{height:54px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px}
-  footer{padding-bottom:90px}
-  .sp-bar a:first-child{background:var(--leaf)}.sp-bar a:last-child{background:var(--kaki)}
-}
-</style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="noindex, nofollow" name="robots"/>
+<title>ことは工務店｜暮らしのことばから考える家（制作サンプル）</title>
+<meta content="家族の暮らしから間取りを考える工務店の制作サンプル。設計提案、家づくりの確認事項、見学相談の導線をご覧いただけます。" name="description"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
-<body>
-<div class="notice">※ポートフォリオ用の制作サンプルです。会社名・住所・電話番号・事例・お客様の言葉はすべて架空です。</div>
-
+<body><a class="skip" href="#top">本文へ移動</a>
+<div class="notice">制作サンプル / 架空の工務店・設計プランです。実際の施工実績ではありません。　<a href="../../index.html#works">作品一覧へ</a>
+</div>
 <header>
-  <div class="inner hd">
-    <a class="logo" href="#top" aria-label="ことは工務店 トップへ">
-      <svg viewBox="0 0 34 34" aria-hidden="true"><path d="M17 3C8 9 5 18 9 27c3-6 5-10 8-14-2 6-3 11-2 18 9-4 13-13 7-24-1-1-3-3-5-4z" fill="#4B6A3A"/></svg>
-      <b>ことは工務店</b>
-    </a>
-    <nav class="gnav" aria-label="メニュー">
-      <a href="#plan">ことばの間取り</a><a href="#report">家の通知表</a><a href="#day">暮らしの一日</a><a href="#daiku">大工のこと</a><a href="#works">施工事例</a><a href="#event">見学会</a>
-    </nav>
-    <div class="hbtns"><a class="hbtn" href="#contact">資料請求</a><a class="hbtn k" href="#event">見学会予約</a></div>
-  </div>
+<div class="inner hd">
+<a aria-label="ことは工務店 トップへ" class="logo" href="#top">
+<svg aria-hidden="true" viewbox="0 0 34 34"><path d="M17 3C8 9 5 18 9 27c3-6 5-10 8-14-2 6-3 11-2 18 9-4 13-13 7-24-1-1-3-3-5-4z" fill="#4B6A3A"></path></svg>
+<b>ことは工務店</b>
+</a>
+<nav aria-label="メニュー" class="gnav">
+<a href="#plan">ことばの間取り</a><a href="#report">家づくりの確認表</a><a href="#day">暮らしの一日</a><a href="#daiku">大工のこと</a><a href="#works">住まいの提案例</a><a href="#event">見学会</a>
+</nav>
+<div class="hbtns"><a class="hbtn" href="#contact">資料請求</a><a class="hbtn k" href="#event">見学会予約</a>
+</div>
+</div>
 </header>
-
 <main id="top">
-  <section class="hero">
-    <div class="inner hero-grid">
-      <h1 class="hero-copy">家は、<br>ことばから<br>建てる。<span class="s">みなと市の工務店　ことは</span></h1>
-      <div class="hero-photos">
-        <figure class="hp1"><img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1400&q=75&auto=format&fit=crop" alt="無垢の床のダイニング"></figure>
-        <figure class="hp2"><img src="https://images.unsplash.com/photo-1659930087003-2d64e33181f7?w=700&q=75&auto=format&fit=crop" alt="木材に線を引く大工の手元"></figure>
-        <figure class="hp3"><img src="https://images.unsplash.com/photo-1712232907812-4bd219a99a49?w=500&q=75&auto=format&fit=crop" alt="障子から光が入る畳の部屋"></figure>
-        <div class="note">「朝ごはんのとき、<br>庭の木が見えるといいな」<small>— S様のことば（最初の打ち合わせより）</small></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="marquee" aria-hidden="true"><span>木の葉と、ことば。　KOTOHA KOUMUTEN　since 1984　木の葉と、ことば。　KOTOHA KOUMUTEN　since 1984　木の葉と、ことば。　KOTOHA KOUMUTEN　since 1984　木の葉と、ことば。　KOTOHA KOUMUTEN　since 1984　</span></div>
-
-  <!-- signature -->
-  <section class="sec" id="plan">
-    <div class="inner">
-      <div class="sh">
-        <h2>ことばの間取り</h2>
-        <div class="lead"><span class="en">PLAN FROM WORDS</span><strong>間取り図の一部屋ずつに、<br>ご家族のことばが入っています。</strong><p>私たちは最初の打ち合わせで、図面を広げません。「休みの日は何をしていますか」「家でいちばん長くいる場所は」。ご家族の何気ないことばを書きとめ、それを部屋の形にしていきます。下の図の部屋を押すと、実際に建てた家（制作サンプル）の「ことば」と「設計の工夫」が見られます。</p></div>
-      </div>
-      <div class="plan-wrap">
-        <div class="plan">
-          <svg viewBox="0 0 600 420" role="group" aria-label="平屋の間取り図。部屋を選ぶと説明が表示されます">
-            <g class="room" data-r="tatami" role="button" tabindex="0" aria-pressed="false" aria-label="畳コーナー"><rect x="20" y="20" width="150" height="150"/><text x="95" y="90" text-anchor="middle">畳コーナー</text><text class="w" x="95" y="112" text-anchor="middle">4.5帖</text></g>
-            <g class="room" data-r="ldk" role="button" tabindex="0" aria-pressed="true" aria-label="LDK"><rect x="170" y="20" width="260" height="230"/><text x="300" y="130" text-anchor="middle">LDK</text><text class="w" x="300" y="152" text-anchor="middle">20帖・勾配天井</text></g>
-            <g class="room" data-r="bath" role="button" tabindex="0" aria-pressed="false" aria-label="浴室と洗面"><rect x="430" y="20" width="150" height="230"/><text x="505" y="130" text-anchor="middle">浴室・洗面</text><text class="w" x="505" y="152" text-anchor="middle">ランドリー兼用</text></g>
-            <g class="room" data-r="doma" role="button" tabindex="0" aria-pressed="false" aria-label="土間玄関"><rect x="20" y="170" width="150" height="230"/><text x="95" y="280" text-anchor="middle">土間玄関</text><text class="w" x="95" y="302" text-anchor="middle">自転車も置ける</text></g>
-            <g class="room" data-r="kitchen" role="button" tabindex="0" aria-pressed="false" aria-label="キッチン"><rect x="170" y="250" width="160" height="150"/><text x="250" y="320" text-anchor="middle">キッチン</text><text class="w" x="250" y="342" text-anchor="middle">対面・回遊</text></g>
-            <g class="room deck" data-r="deck" role="button" tabindex="0" aria-pressed="false" aria-label="ウッドデッキ"><rect x="330" y="250" width="250" height="150" stroke-dasharray="8 6"/><text x="455" y="320" text-anchor="middle">ウッドデッキ</text><text class="w" x="455" y="342" text-anchor="middle">南向き</text></g>
-            <path d="M300 250 v-18 M330 400 h60" stroke="#2A2925" stroke-width="2"/>
-          </svg>
-          <div class="plan-cap"><span>S様邸（平屋・延床28坪）※制作サンプル</span><span>部屋を押すと切り替わります</span></div>
-        </div>
-        <article class="room-card" id="roomCard" aria-live="polite">
-          <div class="ph"><img id="rcImg" src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=900&q=75&auto=format&fit=crop" alt="LDKの写真"></div>
-          <div class="bd">
-            <span class="nm" id="rcName">LDK</span>
-            <blockquote id="rcWord">「朝ごはんのとき、庭の木が見えるといいな」</blockquote>
-            <p class="who" id="rcWho">— 奥様のことば</p>
-            <p class="dz"><b>そこで、こう設計しました</b><span id="rcDesign">ダイニングの東側に、座ったときの目線に合わせた高さ90cmの横長窓をつくりました。庭のヤマボウシが、朝日と一緒に見えます。</span></p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="report" style="background:#F2EEE5">
-    <div class="inner">
-      <div class="sh">
-        <h2>家の通知表</h2>
-        <div class="lead"><span class="en">PERFORMANCE</span><strong>見えない性能は、<br>数字でお渡しします。</strong><p>ことは工務店の家は、引き渡しのときに「家の通知表」をお渡ししています。すべて全棟で測定・計算した実際の数値です。</p></div>
-      </div>
-      <div class="report">
-        <div class="report-hd"><h3>通　知　表</h3><span>ことは工務店の標準仕様 ／ 2026年度</span></div>
-        <table class="rtbl">
-          <tr><th>地震への強さ</th><td class="gr">3<small>／3</small></td><td>耐震等級3（最高等級）。全棟で許容応力度計算を行います。</td></tr>
-          <tr><th>冬の暖かさ</th><td class="gr">6<small>／7</small></td><td>断熱等性能等級6。UA値0.46以下。エアコン1台で家じゅうを暖められます。</td></tr>
-          <tr><th>すき間の少なさ</th><td class="gr">0.5<small>以下</small></td><td>気密性能C値。全棟で気密測定を行い、結果をお渡しします。</td></tr>
-          <tr><th>建てた後の見守り</th><td class="gr">10<small>年</small></td><td>1・2・5・10年目に無料点検。担当した大工が伺います。</td></tr>
-        </table>
-        <div class="hanko" aria-hidden="true">大変<br>よく<br>できました</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="day" data-t="asa">
-    <div class="inner">
-      <div class="sh">
-        <h2>暮らしの一日</h2>
-        <div class="lead"><span class="en">ONE DAY</span><strong>朝から夜まで、<br>光の入り方を考えています。</strong><p>スクロールすると、背景の色が朝から夜へ変わっていきます。</p></div>
-      </div>
-      <div class="day">
-        <div class="slot" data-t="asa"><p class="tm">7:00<small>あさ</small></p><div class="ph"><img src="https://images.unsplash.com/photo-1651765895131-1ae059a5f9ed?w=900&q=75&auto=format&fit=crop" alt="朝日の入るキッチン" loading="lazy"></div><div><h3>東の窓から、朝の光</h3><p>キッチンは東向きに。朝食をつくる時間に、手元がいちばん明るくなります。</p><span class="pt">東窓　W1,690 × H900</span></div></div>
-        <div class="slot" data-t="hiru"><p class="tm">13:00<small>ひる</small></p><div class="ph"><img src="https://images.unsplash.com/photo-1560185008-b033106af5c3?w=900&q=75&auto=format&fit=crop" alt="明るいリビング" loading="lazy"></div><div><h3>夏は日差しを入れない</h3><p>南の軒を91cm出しています。高い夏の日差しはさえぎり、低い冬の日差しは部屋の奥まで届きます。</p><span class="pt">軒の出　910mm</span></div></div>
-        <div class="slot" data-t="yu"><p class="tm">17:30<small>ゆうがた</small></p><div class="ph"><img src="https://images.unsplash.com/photo-1712232907812-4bd219a99a49?w=900&q=75&auto=format&fit=crop" alt="夕方の光が入る畳の部屋" loading="lazy"></div><div><h3>障子ごしの、やわらかい西日</h3><p>西日がまぶしい畳コーナーには障子を。光をやわらげながら、部屋を明るく保ちます。</p><span class="pt">障子　手すき和紙</span></div></div>
-        <div class="slot" data-t="yoru"><p class="tm">21:00<small>よる</small></p><div class="ph"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=900&q=75&auto=format&fit=crop" alt="夜の浴室" loading="lazy"></div><div><h3>冬でも寒くないお風呂</h3><p>浴室の床下まで断熱しているので、冬の夜でもヒヤッとしません。脱衣所との温度差も小さくなります。</p><span class="pt">浴室床下断熱　標準</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="daiku" id="daiku">
-    <div class="ph"><img src="https://images.unsplash.com/photo-1676802037786-3697d60497ae?w=1200&q=75&auto=format&fit=crop" alt="上棟した木造住宅の骨組み" loading="lazy"></div>
-    <div class="tx">
-      <p class="vt">建てた人が、<br>直しに来る。</p>
-      <div>
-        <p>ことは工務店の家は、社員の大工4名が建てています。下請けに任せないので、どの柱をどこに立てたか、建てた本人が覚えています。10年後に「ドアの閉まりが悪い」と電話をいただいたら、その家を建てた大工が伺います。</p>
-        <ul>
-          <li><span>棟梁　木下 健一</span><span>大工歴31年</span></li>
-          <li><span>大工　田中 誠</span><span>大工歴24年</span></li>
-          <li><span>大工　大野 翔太</span><span>大工歴9年</span></li>
-          <li><span>見習い　森 さくら</span><span>大工歴2年</span></li>
-        </ul>
-        <p class="sig">— 棟梁 木下より</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="works">
-    <div class="inner">
-      <div class="sh">
-        <h2>施工事例</h2>
-        <div class="lead"><span class="en">WORKS</span><strong>家ごとに、<br>ちがう「ことば」があります。</strong><p>写真の上の手書きメモは、その家づくりのきっかけになったご家族のことばです。</p></div>
-      </div>
-      <div class="works" tabindex="0" aria-label="施工事例の一覧（横にスクロールできます）">
-        <a class="wk" href="#contact"><div class="ph"><img src="https://images.unsplash.com/photo-1704457031194-fe759908e9a1?w=800&q=75&auto=format&fit=crop" alt="木の外壁の2階建て" loading="lazy"><p class="qt">「ベランダで星を見たい」</p></div><div class="mt"><b>新築</b>みなと市 ／ 延床32坪</div><h3>屋上テラスのある、木の外壁の家</h3></a>
-        <a class="wk" href="#contact"><div class="ph"><img src="https://images.unsplash.com/photo-1651765895131-1ae059a5f9ed?w=800&q=75&auto=format&fit=crop" alt="木のカウンターのキッチン" loading="lazy"><p class="qt">「料理しながら宿題を見たい」</p></div><div class="mt"><b>リフォーム</b>あおば町 ／ 築38年</div><h3>壁付けキッチンを、対面キッチンに</h3></a>
-        <a class="wk" href="#contact"><div class="ph"><img src="https://images.unsplash.com/photo-1784932328904-858813ec31c4?w=800&q=75&auto=format&fit=crop" alt="外壁を張り替えた家" loading="lazy"><p class="qt">「あと30年、この家に住みたい」</p></div><div class="mt"><b>外壁・屋根</b>さくら町 ／ 工期3週間</div><h3>外壁の張り替えと、屋根の断熱改修</h3></a>
-        <a class="wk" href="#contact"><div class="ph"><img src="https://images.unsplash.com/photo-1631048499052-e6d9f305d2c0?w=800&q=75&auto=format&fit=crop" alt="新しい洗面所" loading="lazy"><p class="qt">「朝の洗面所の渋滞をなくしたい」</p></div><div class="mt"><b>水まわり</b>ひかり台 ／ 工期4日</div><h3>2人並べる、幅1.6mの洗面台</h3></a>
-      </div>
-      <p class="scroll-hint">横にスクロールできます →</p>
-    </div>
-  </section>
-
-  <section class="sec" id="event" style="background:#F2EEE5">
-    <div class="inner">
-      <div class="sh">
-        <h2>見学会・相談会</h2>
-        <div class="lead"><span class="en">EVENT</span><strong>本物の家で、<br>木の香りを確かめてください。</strong><p>すべて予約制です。営業トークはしません。</p></div>
-      </div>
-      <div class="ev">
-        <a class="ev-card" href="#contact"><div class="ev-date"><b>10.17</b><span>（土）・18（日）</span></div><div class="ev-bd"><span class="tg">完成見学会</span><h3>「ことばの間取り」の平屋を見学</h3><p>みなと市さくら台 ／ 10:00〜16:00 ／ 1組90分</p></div></a>
-        <a class="ev-card g" href="#contact"><div class="ev-date"><b>10.25</b><span>（日）</span></div><div class="ev-bd"><span class="tg">相談会</span><h3>はじめての家づくり勉強会</h3><p>本社ショールーム ／ 資金計画・土地探しの基本</p></div></a>
-      </div>
-      <div class="cta">
-        <h2>あなたの「ことば」を聞かせてください</h2>
-        <p>資料請求・見積もり・現地調査は無料です。</p>
-        <div class="cta-btns"><a class="cbtn w" href="#contact">無料で資料請求する</a><a class="cbtn k" href="#contact">見学会を予約する</a></div>
-        <p class="tel">お電話でも受け付けています<b>0120-000-000</b>8:30〜17:30（水・日定休）</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="contact">
-    <div class="inner">
-      <div class="sh">
-        <h2>お問い合わせ</h2>
-        <div class="lead"><span class="en">CONTACT</span><strong>2営業日以内に、<br>担当者からご連絡します。</strong></div>
-      </div>
-      <div class="contact">
-        <div class="hear">
-          <h3>「ひとこと欄」に書いてください</h3>
-          <p>フォームの最後に、今の住まいについてのひとことを書く欄があります。「冬、脱衣所が寒い」「子ども部屋が足りない」など、短くて大丈夫です。そのことばから、ご提案を考えます。</p>
-        </div>
-        <form class="form" id="form" novalidate>
-          <div class="fld"><span class="lb">ご用件<span class="rq">必須</span></span>
-            <div class="chips">
-              <label><input type="checkbox" name="t" value="資料請求" checked><span>資料請求</span></label>
-              <label><input type="checkbox" name="t" value="見学会予約"><span>見学会予約</span></label>
-              <label><input type="checkbox" name="t" value="新築の相談"><span>新築の相談</span></label>
-              <label><input type="checkbox" name="t" value="リフォームの相談"><span>リフォームの相談</span></label>
-            </div>
-          </div>
-          <div class="fld"><label for="nm">お名前<span class="rq">必須</span></label><input type="text" id="nm" autocomplete="name" placeholder="例）山田 花子"></div>
-          <div class="fld"><label for="em">メールアドレス<span class="rq">必須</span></label><input type="email" id="em" autocomplete="email" placeholder="例）info@example.com"></div>
-          <div class="fld"><label for="hw">ひとこと欄</label><textarea id="hw" placeholder="例）冬、お風呂が寒いです。"></textarea></div>
-          <button class="send" type="submit">この内容で送る</button>
-          <p class="msg" id="msg" role="status"></p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="company" style="padding-top:0">
-    <div class="inner"><h2 style="font-family:var(--mincho);font-size:22px;letter-spacing:.2em;margin-bottom:16px">会社概要</h2></div>
-    <div class="inner co">
-      <dl>
-        <dt>会社名</dt><dd>株式会社ことは工務店</dd>
-        <dt>創業</dt><dd>1984年</dd>
-        <dt>所在地</dt><dd>〒000-0000 みなと市さかえ町1-2-3</dd>
-        <dt>従業員</dt><dd>12名（大工4名・一級建築士2名）</dd>
-      </dl>
-      <dl>
-        <dt>許認可</dt><dd>建設業許可 みなと県知事（般-00）第00000号</dd>
-        <dt>対応エリア</dt><dd>みなと市・さくら町・あおば町・ひかり台</dd>
-        <dt>営業時間</dt><dd>8:30〜17:30（水曜・日曜定休）</dd>
-        <dt>電話</dt><dd>0120-000-000</dd>
-      </dl>
-    </div>
-  </section>
+<section class="hero">
+<div class="inner hero-grid">
+<h1 class="hero-copy">家は、<br/>ことばから<br/>建てる。<span class="s">みなと市の工務店　ことは</span>
+</h1>
+<div class="hero-photos">
+<figure class="hp1"><img alt="無垢の床のダイニング（イメージ写真）" decoding="async" height="960" src="../../assets/images/1560185007-cde436f6a4d0.webp" width="1440"/>
+</figure>
+<figure class="hp2"><img alt="木材に線を引く大工の手元（イメージ写真）" decoding="async" height="960" src="../../assets/images/1659930087003-2d64e33181f7.webp" width="1440"/>
+</figure>
+<figure class="hp3"><img alt="障子から光が入る畳の部屋（イメージ写真）" decoding="async" height="960" src="../../assets/images/1712232907812-4bd219a99a49.webp" width="1440"/>
+</figure>
+<div class="note">「朝ごはんのとき、<br/>庭の木が見えるといいな」<small>暮らしのご希望を想定した設計例</small>
+</div>
+</div>
+</div>
+</section>
+<!-- signature -->
+<section class="sec" id="plan">
+<div class="inner">
+<div class="sh">
+<h2>ことばの間取り
+</h2>
+<div class="lead"><span class="en">PLAN FROM WORDS</span><strong>間取り図の一部屋ずつに、<br/>ご家族のことばが入っています。</strong>
+<p>私たちは最初の打ち合わせで、図面を広げません。「休みの日は何をしていますか」「家でいちばん長くいる場所は」。ご家族の何気ないことばを書きとめ、それを部屋の形にしていきます。下の図の部屋を押すと、平屋の設計提案例の「ことば」と「設計の工夫」が見られます。
+</p>
+</div>
+</div>
+<div class="plan-wrap">
+<div class="plan">
+<svg aria-label="平屋の間取り図。部屋を選ぶと説明が表示されます" role="group" viewbox="0 0 600 420">
+<g aria-label="畳コーナー" aria-pressed="false" class="room" data-r="tatami" role="button" tabindex="0"><rect height="150" width="150" x="20" y="20"></rect><text text-anchor="middle" x="95" y="90">畳コーナー</text><text class="w" text-anchor="middle" x="95" y="112">4.5帖</text></g>
+<g aria-label="LDK" aria-pressed="true" class="room" data-r="ldk" role="button" tabindex="0"><rect height="230" width="260" x="170" y="20"></rect><text text-anchor="middle" x="300" y="130">LDK</text><text class="w" text-anchor="middle" x="300" y="152">20帖・勾配天井</text></g>
+<g aria-label="浴室と洗面" aria-pressed="false" class="room" data-r="bath" role="button" tabindex="0"><rect height="230" width="150" x="430" y="20"></rect><text text-anchor="middle" x="505" y="130">浴室・洗面</text><text class="w" text-anchor="middle" x="505" y="152">ランドリー兼用</text></g>
+<g aria-label="土間玄関" aria-pressed="false" class="room" data-r="doma" role="button" tabindex="0"><rect height="230" width="150" x="20" y="170"></rect><text text-anchor="middle" x="95" y="280">土間玄関</text><text class="w" text-anchor="middle" x="95" y="302">自転車も置ける</text></g>
+<g aria-label="キッチン" aria-pressed="false" class="room" data-r="kitchen" role="button" tabindex="0"><rect height="150" width="160" x="170" y="250"></rect><text text-anchor="middle" x="250" y="320">キッチン</text><text class="w" text-anchor="middle" x="250" y="342">対面・回遊</text></g>
+<g aria-label="ウッドデッキ" aria-pressed="false" class="room deck" data-r="deck" role="button" tabindex="0"><rect height="150" stroke-dasharray="8 6" width="250" x="330" y="250"></rect><text text-anchor="middle" x="455" y="320">ウッドデッキ</text><text class="w" text-anchor="middle" x="455" y="342">南向き</text></g>
+<path d="M300 250 v-18 M330 400 h60" stroke="#2A2925" stroke-width="2"></path>
+</svg>
+<div class="plan-cap"><span>平屋の設計提案（架空のプラン・縮尺は概略）</span><span>部屋を押すと切り替わります</span>
+</div>
+</div>
+<article aria-live="polite" class="room-card" id="roomCard">
+<div class="ph"><img alt="LDKの写真（イメージ写真）" decoding="async" height="960" id="rcImg" loading="lazy" src="../../assets/images/1560185007-cde436f6a4d0.webp" width="1440"/>
+</div>
+<div class="bd">
+<span class="nm" id="rcName">LDK</span>
+<blockquote id="rcWord">「朝ごはんのとき、庭の木が見えるといいな」</blockquote>
+<p class="who" id="rcWho">— 暮らしのご希望例
+</p>
+<p class="dz"><b>間取りへの取り入れ方</b><span id="rcDesign">ダイニングの東側に、座ったときの目線に合わせた高さ90cmの横長窓を設けるプランです。庭のヤマボウシが、朝日と一緒に見えます。</span>
+</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="sec" id="report" style="background:#F2EEE5">
+<div class="inner">
+<div class="sh">
+<h2>家づくりの確認表
+</h2>
+<div class="lead"><span class="en">PERFORMANCE</span><strong>見えない部分も、<br/>打ち合わせで確認します。</strong>
+<p>耐震・断熱・維持費。言葉だけでは比較しにくい項目を、図面や見積もりと一緒に確認できるように整理します。
+</p>
+</div>
+</div>
+<div class="report">
+<div class="report-hd">
+<h3>家づくりの確認表
+</h3><span>ご相談で確認する4つの項目</span>
+</div>
+<table class="rtbl">
+<tr><th scope="row">構造のこと</th><td class="gr">耐震</td><td>設計で目指す性能と、計算・検査で確認する内容。</td>
+</tr>
+<tr><th scope="row">室内のこと</th><td class="gr">断熱</td><td>窓・壁・屋根の仕様と、部屋ごとの冷暖房計画。</td>
+</tr>
+<tr><th scope="row">費用のこと</th><td class="gr">総額</td><td>建物に加え、外構・地盤調査・諸費用の範囲。</td>
+</tr>
+<tr><th scope="row">完成後のこと</th><td class="gr">点検</td><td>点検の時期、相談窓口、保証の対象と条件。</td>
+</tr>
+</table>
+</div>
+</div>
+</section>
+<section class="sec" data-t="asa" id="day">
+<div class="inner">
+<div class="sh">
+<h2>暮らしの一日
+</h2>
+<div class="lead"><span class="en">ONE DAY</span><strong>朝から夜まで、<br/>光の入り方を考えています。</strong>
+<p>窓の向きや家事の順番を、一日の過ごし方から検討します。写真は空間のイメージです。
+</p>
+</div>
+</div>
+<div class="day">
+<div class="slot" data-t="asa">
+<p class="tm">7:00<small>あさ</small>
+</p>
+<div class="ph"><img alt="朝日の入るキッチン（イメージ写真）" decoding="async" height="960" loading="lazy" src="../../assets/images/1651765895131-1ae059a5f9ed.webp" width="1440"/>
+</div>
+<div>
+<h3>東の窓から、朝の光
+</h3>
+<p>キッチンは東向きに。朝食をつくる時間に、手元がいちばん明るくなります。
+</p><span class="pt">東窓　W1,690 × H900</span>
+</div>
+</div>
+<div class="slot" data-t="hiru">
+<p class="tm">13:00<small>ひる</small>
+</p>
+<div class="ph"><img alt="明るいリビング（イメージ写真）" decoding="async" height="960" loading="lazy" src="../../assets/images/1560185008-b033106af5c3.webp" width="1440"/>
+</div>
+<div>
+<h3>夏は日差しを入れない
+</h3>
+<p>南の軒を91cm出しています。高い夏の日差しはさえぎり、低い冬の日差しは部屋の奥まで届きます。
+</p><span class="pt">軒の出　910mm</span>
+</div>
+</div>
+<div class="slot" data-t="yu">
+<p class="tm">17:30<small>ゆうがた</small>
+</p>
+<div class="ph"><img alt="夕方の光が入る畳の部屋（イメージ写真）" decoding="async" height="960" loading="lazy" src="../../assets/images/1712232907812-4bd219a99a49.webp" width="1440"/>
+</div>
+<div>
+<h3>障子ごしの、やわらかい西日
+</h3>
+<p>西日がまぶしい畳コーナーには障子を。光をやわらげながら、部屋を明るく保ちます。
+</p><span class="pt">障子　手すき和紙</span>
+</div>
+</div>
+<div class="slot" data-t="yoru">
+<p class="tm">21:00<small>よる</small>
+</p>
+<div class="ph"><img alt="浴室と洗面の空間（イメージ写真）" decoding="async" height="960" loading="lazy" src="../../assets/images/1620626011761-996317b8d101.webp" width="1440"/>
+</div>
+<div>
+<h3>脱衣所まで、温度差を考える
+</h3>
+<p>浴室だけでなく脱衣所の断熱や暖房も合わせて検討。入浴前後の過ごし方まで、ご相談で確認します。
+</p><span class="pt">浴室・脱衣所の温熱計画</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="daiku" id="daiku">
+<div class="ph"><img alt="上棟した木造住宅の骨組み（イメージ写真）" decoding="async" height="960" loading="lazy" src="../../assets/images/1676802037786-3697d60497ae.webp" width="1440"/>
+</div>
+<div class="tx">
+<h2 class="vt">つくる途中も、<br/>話せる家づくり。
+</h2>
+<div>
+<p>打ち合わせで決めたことは、図面と仕様書に残します。棚の高さ、コンセントの位置、木の仕上げ。現場で気になる点も、その都度確認できる進め方を大切にします。
+</p>
+<ul>
+<li>設計時：動線と収納を図面で確認
+</li>
+<li>着工前：仕様と見積もりの範囲を整理
+</li>
+<li>工事中：仕上がりと変更点を共有
+</li>
+<li>引き渡し：設備の使い方と点検を案内
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="sec" id="works">
+<div class="inner">
+<div class="sh">
+<h2>住まいの提案例
+</h2>
+<div class="lead"><span class="en">WORKS</span><strong>家ごとに、<br/>ちがう「ことば」があります。</strong>
+<p>ご希望に合わせた設計の考え方をご紹介します。施工実績ではなく、写真素材を用いた架空の提案例です。
+</p>
+</div>
+</div>
+<div aria-label="住まいの提案例の一覧（横にスクロールできます）" class="works" tabindex="0">
+<a class="wk" href="#contact">
+<div class="ph"><img alt="木の外壁の2階建て（イメージ写真）" decoding="async" height="960" loading="lazy" src="../../assets/images/1704457031194-fe759908e9a1.webp" width="1440"/>
+<p class="qt">「ベランダで星を見たい」
+</p>
+</div>
+<div class="mt">新築の設計提案
+</div>
+<h3>屋上テラスのある、木の外壁の家
+</h3></a>
+<a class="wk" href="#contact">
+<div class="ph"><img alt="木のカウンターのキッチン（イメージ写真）" decoding="async" height="960" loading="lazy" src="../../assets/images/1651765895131-1ae059a5f9ed.webp" width="1440"/>
+<p class="qt">「料理しながら宿題を見たい」
+</p>
+</div>
+<div class="mt">キッチン改修の提案
+</div>
+<h3>壁付けキッチンを、対面キッチンに
+</h3></a>
+<a class="wk" href="#contact">
+<div class="ph"><img alt="外壁を張り替えた家（イメージ写真）" decoding="async" height="960" loading="lazy" src="../../assets/images/1784932328904-858813ec31c4.webp" width="1440"/>
+<p class="qt">「あと30年、この家に住みたい」
+</p>
+</div>
+<div class="mt">外装の計画例
+</div>
+<h3>外壁の張り替えと、屋根の断熱改修
+</h3></a>
+<a class="wk" href="#contact">
+<div class="ph"><img alt="新しい洗面所（イメージ写真）" decoding="async" height="960" loading="lazy" src="../../assets/images/1631048499052-e6d9f305d2c0.webp" width="1440"/>
+<p class="qt">「朝の洗面所の渋滞をなくしたい」
+</p>
+</div>
+<div class="mt">洗面スペースの提案
+</div>
+<h3>2人並べる、幅1.6mの洗面台
+</h3></a>
+</div>
+<p class="scroll-hint">横にスクロールできます →
+</p>
+</div>
+</section>
+<section class="sec" id="event" style="background:#F2EEE5">
+<div class="inner">
+<div class="sh">
+<h2>見学会・相談会
+</h2>
+<div class="lead"><span class="en">EVENT</span><strong>図面では分からない、<br/>部屋の広さを確かめる。</strong>
+<p>見学会・相談会の掲載例です。実際の開催・予約受付はありません。
+</p>
+</div>
+</div>
+<div class="ev">
+<a class="ev-card" href="#contact">
+<div class="ev-date"><b>10.17</b><span>（土）・18（日）</span>
+</div>
+<div class="ev-bd"><span class="tg">完成見学会</span>
+<h3>「ことばの間取り」の平屋を見学
+</h3>
+<p>みなと市さくら台 ／ 10:00〜16:00 ／ 1組90分
+</p>
+</div></a>
+<a class="ev-card g" href="#contact">
+<div class="ev-date"><b>10.25</b><span>（日）</span>
+</div>
+<div class="ev-bd"><span class="tg">相談会</span>
+<h3>はじめての家づくり勉強会
+</h3>
+<p>本社ショールーム ／ 資金計画・土地探しの基本
+</p>
+</div></a>
+</div>
+<div class="cta">
+<h2>あなたの「ことば」を聞かせてください
+</h2>
+<p>資料請求・見積もり・現地調査は無料です。
+</p>
+<div class="cta-btns"><a class="cbtn w" href="#contact">無料で資料請求する</a><a class="cbtn k" href="#contact">見学会を予約する</a>
+</div>
+<p class="tel">ご相談受付のデモです。実際の資料発送・予約受付は行いません。
+</p>
+</div>
+</div>
+</section>
+<section class="sec" id="contact">
+<div class="inner">
+<div class="sh">
+<h2>お問い合わせ
+</h2>
+<div class="lead"><span class="en">CONTACT</span><strong>家づくりのご希望を、<br/>ひとことから。</strong>
+</div>
+</div>
+<div class="contact">
+<div class="hear">
+<h3>「ひとこと欄」に書いてください
+</h3>
+<p>フォームの最後に、今の住まいについてのひとことを書く欄があります。「冬、脱衣所が寒い」「子ども部屋が足りない」など、短くて大丈夫です。そのことばから、ご提案を考えます。
+</p>
+</div>
+<form class="form" id="form" novalidate="">
+<p class="demo-explain">入力確認用のデモです。送信・保存はされません。実際の個人情報は入力しないでください。
+</p>
+<div class="fld"><span class="lb">ご用件<span class="rq">必須</span></span>
+<div class="chips">
+<label><input autocomplete="off" checked="" name="t" type="checkbox" value="資料請求"/><span>資料請求</span></label>
+<label><input autocomplete="off" name="t" type="checkbox" value="見学会予約"/><span>見学会予約</span></label>
+<label><input autocomplete="off" name="t" type="checkbox" value="新築の相談"/><span>新築の相談</span></label>
+<label><input autocomplete="off" name="t" type="checkbox" value="リフォームの相談"/><span>リフォームの相談</span></label>
+</div>
+</div>
+<div class="fld"><label for="nm">お名前<span class="rq">必須</span></label><input autocomplete="off" id="nm" placeholder="例）山田 花子" type="text"/>
+</div>
+<div class="fld"><label for="em">メールアドレス<span class="rq">必須</span></label><input autocomplete="off" id="em" placeholder="例）info@example.com" type="email"/>
+</div>
+<div class="fld"><label for="hw">ひとこと欄</label><textarea id="hw" placeholder="例）冬、お風呂が寒いです。"></textarea>
+</div>
+<button class="send" type="submit">入力内容を確認する</button>
+<p class="msg" id="msg" role="status" tabindex="-1">
+</p>
+</form>
+</div>
+</div>
+</section>
+<section class="sec" id="company" style="padding-top:0">
+<div class="inner">
+<h2 style="font-family:var(--mincho);font-size:22px;letter-spacing:.2em;margin-bottom:16px">会社概要
+</h2>
+</div>
+<div class="inner co">
+<dl>
+<dt>屋号
+</dt>
+<dd>ことは工務店（架空）
+</dd>
+<dt>事業内容
+</dt>
+<dd>注文住宅・リフォームを想定
+</dd>
+<dt>営業設定
+</dt>
+<dd>8:30〜17:30／水・日定休
+</dd>
+</dl>
+<dl>
+<dt>想定エリア
+</dt>
+<dd>近隣地域の戸建て住宅
+</dd>
+<dt>設計提案
+</dt>
+<dd>平屋・家事動線・収納計画
+</dd>
+<dt>所在地・連絡先
+</dt>
+<dd>制作サンプルのため設定していません
+</dd>
+</dl>
+</div>
+</section>
 </main>
-
 <footer>
-  <div class="inner ft">
-    <a class="logo" href="#top"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M17 3C8 9 5 18 9 27c3-6 5-10 8-14-2 6-3 11-2 18 9-4 13-13 7-24-1-1-3-3-5-4z" fill="#9DBB84"/></svg><b>ことは工務店</b></a>
-    <p>© KOTOHA KOUMUTEN（制作サンプル・架空の会社です）／ Photos: Unsplash</p>
-  </div>
+<div class="inner ft">
+<a class="logo" href="#top"><svg aria-hidden="true" viewbox="0 0 34 34"><path d="M17 3C8 9 5 18 9 27c3-6 5-10 8-14-2 6-3 11-2 18 9-4 13-13 7-24-1-1-3-3-5-4z" fill="#9DBB84"></path></svg><b>ことは工務店</b></a>
+<p>© ことは工務店 / 制作サンプル　<a href="../../credits.html">写真の出典</a>　<a href="../koumuten-b/index.html">同じ工務店のB案を見る</a>
+</p>
+</div>
 </footer>
-<div class="sp-bar"><a href="#contact">資料請求</a><a href="#event">見学会予約</a></div>
-
-<script>
-/* ことばの間取り */
-const ROOMS={
-  ldk:{n:'LDK',img:'photo-1560185007-cde436f6a4d0',w:'「朝ごはんのとき、庭の木が見えるといいな」',who:'— 奥様のことば',d:'ダイニングの東側に、座ったときの目線に合わせた高さ90cmの横長窓をつくりました。庭のヤマボウシが、朝日と一緒に見えます。'},
-  tatami:{n:'畳コーナー',img:'photo-1712232907812-4bd219a99a49',w:'「ごろんと昼寝できる場所がほしい」',who:'— ご主人のことば',d:'LDKから床を40cm上げた4.5帖の畳コーナー。段差に腰かけられ、下は大きな引き出し収納になっています。'},
-  bath:{n:'浴室・洗面',img:'photo-1631048499052-e6d9f305d2c0',w:'「洗濯物を持って階段を上りたくない」',who:'— 奥様のことば',d:'平屋にして、洗う・干す・しまうを浴室まわりの1か所に集めました。室内干しの竿は天井に2本あります。'},
-  doma:{n:'土間玄関',img:'photo-1704457031194-fe759908e9a1',w:'「自転車を雨にぬらしたくない」',who:'— 息子さんのことば',d:'玄関を3帖の土間にし、自転車2台とベビーカーを置けるようにしました。壁には趣味の釣り道具を掛けるフックを付けています。'},
-  kitchen:{n:'キッチン',img:'photo-1651765895131-1ae059a5f9ed',w:'「料理しながら、子どもの宿題を見たい」',who:'— 奥様のことば',d:'対面キッチンのカウンターを奥行き45cm広げ、子どもが勉強できる机を兼ねています。キッチンのまわりをぐるっと回れる動線です。'},
-  deck:{n:'ウッドデッキ',img:'photo-1560185008-b033106af5c3',w:'「夏は外でごはんを食べたい」',who:'— 娘さんのことば',d:'LDKの床と同じ高さで南側にウッドデッキを。窓を開けると、部屋が外まで広がります。'}
-};
-const rooms=document.querySelectorAll('.plan .room');
-function pick(g){
-  const r=ROOMS[g.dataset.r];
-  rooms.forEach(x=>x.setAttribute('aria-pressed',x===g));
-  const img=document.getElementById('rcImg');
-  img.src='https://images.unsplash.com/'+r.img+'?w=900&q=75&auto=format&fit=crop';
-  img.alt=r.n+'の写真';
-  document.getElementById('rcName').textContent=r.n;
-  document.getElementById('rcWord').textContent=r.w;
-  document.getElementById('rcWho').textContent=r.who;
-  document.getElementById('rcDesign').textContent=r.d;
-}
-rooms.forEach(g=>{
-  g.addEventListener('click',()=>pick(g));
-  g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(g);}});
-});
-
-/* 暮らしの一日：背景色 */
-const day=document.getElementById('day');
-if('IntersectionObserver' in window){
-  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)day.dataset.t=e.target.dataset.t;});},{rootMargin:'-45% 0px -45% 0px'});
-  document.querySelectorAll('.slot').forEach(s=>io.observe(s));
-}
-
-/* フォーム */
-document.getElementById('form').addEventListener('submit',e=>{
-  e.preventDefault();
-  const m=document.getElementById('msg'),er=[];
-  if(!document.querySelectorAll('input[name=t]:checked').length)er.push('ご用件を1つ以上選んでください。');
-  if(!document.getElementById('nm').value.trim())er.push('お名前を入力してください。');
-  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(document.getElementById('em').value.trim()))er.push('メールアドレスを正しく入力してください。');
-  if(er.length){m.className='msg err';m.textContent=er.join(' ');return;}
-  m.className='msg ok';m.textContent='ありがとうございました。（制作サンプルのため、実際には送信されません）';
-});
-</script>
+<div class="sp-bar"><a href="#contact">資料請求</a><a href="#event">見学会予約</a>
+</div>
+<script defer="True" src="script.js"></script>
 </body>
 </html>
