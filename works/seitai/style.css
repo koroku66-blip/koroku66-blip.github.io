@@ -44,3 +44,5 @@
 
 /* Final content refinement */
 .clinic-person{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:center}.clinic-person figure img{aspect-ratio:1/1;object-fit:cover;border-radius:4px 70px 4px 4px}.clinic-person h2{font-family:"Yu Mincho",serif;font-size:31px;margin-bottom:22px}.clinic-person-name{font-weight:600;margin-bottom:20px}.clinic-about{border-top:1px solid var(--line)}@media(max-width:760px){.clinic-person{grid-template-columns:1fr;gap:28px}.clinic-person figure{max-width:420px}.clinic-person figure img{aspect-ratio:3/2}.clinic-person h2{font-size:26px}}
+
+@media(max-width:360px){.brand{font-size:21px}.brand small{font-size:10px}}
