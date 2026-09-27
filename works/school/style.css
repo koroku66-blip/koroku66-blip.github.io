@@ -62,3 +62,6 @@
 .brand{font-size:21px}
 .study-plan li{gap:12px}
 }
+
+/* Final content refinement */
+.school-room{border-top:1px solid var(--line)}.school-room-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.school-room h2{font-size:28px;margin-bottom:22px}.school-teacher-name{font-weight:700;margin-bottom:20px}.school-room figure{border-bottom:5px solid #e1bf42;padding-bottom:12px}.school-room figure img{aspect-ratio:3/2;object-fit:cover}.school-bring{border-left:4px solid #e1bf42;padding:25px 30px;background:var(--soft);margin-bottom:55px}.school-bring h2{font-size:23px;margin-bottom:15px}@media(max-width:760px){.school-room-grid{grid-template-columns:1fr;gap:30px}.school-room h2{font-size:25px}.school-bring{padding:22px}}

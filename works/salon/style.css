@@ -69,3 +69,6 @@
 .nav{background:white}
 .nav .nav-cta{margin:0;text-align:left}
 }
+
+/* Final content refinement */
+.salon-person-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.salon-person figure img{aspect-ratio:4/5;object-fit:cover;object-position:42% center}.salon-person h2{font-family:"Yu Mincho",serif;font-weight:400;font-size:30px;margin-bottom:25px}.salon-person-name{font-size:15px;letter-spacing:.08em;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:25px}.salon-person p{max-width:38em}.salon-visit{border-top:1px solid var(--line);padding-top:60px}.salon-visit h2{font-size:26px;margin-bottom:30px}@media(max-width:760px){.salon-person-grid{grid-template-columns:1fr;gap:30px}.salon-person figure{max-width:450px}.salon-person figure img{aspect-ratio:3/2}.salon-person h2{font-size:26px}}

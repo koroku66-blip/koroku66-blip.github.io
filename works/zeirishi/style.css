@@ -44,3 +44,6 @@
 .data-table{min-width:570px}
 }
 .nobr{display:inline-block}
+
+/* Final content refinement */
+.tax-signature{text-align:right;font-size:18px;margin:30px 0}.tax-contact-person{padding:55px 0;border-top:1px solid var(--line)}.tax-contact-person>.wrap{display:flex;justify-content:space-between;gap:35px;align-items:center}.tax-contact-person h2{font-size:25px;margin-bottom:15px}.tax-contact-person p{max-width:42em}.tax-contact-person a{flex-shrink:0}@media(max-width:760px){.tax-contact-person>.wrap{display:block}.tax-contact-person h2{font-size:23px}}
