@@ -208,3 +208,53 @@ a:hover{opacity:.87}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 *{transition:none!important;animation:none!important}
 }
+
+/* Readability: retain the layout while making supporting copy legible. */
+body{font-family:'Hiragino Kaku Gothic ProN',Meiryo,'Yu Gothic',sans-serif;font-weight:500}
+.hero-description{font-size:18px;line-height:1.95;color:#293e4e}
+.hero-footnote{font-size:14px;color:#344b5b;line-height:1.9}
+.portfolio-header nav a,.primary-link{font-size:16px;font-weight:600}
+.logo small{font-size:10px}
+.eyebrow,.portfolio-hero .eyebrow,.section-intro .eyebrow,
+.feature-index,.feature-caption,.work-meta,.profile-name>span,
+.profile-name p,.portfolio-footer{font-size:14px}
+.eyebrow,.feature-index,.feature-caption,.work-meta,.portfolio-footer{color:#344b5b}
+.section-intro>p,.work-body dl,.work-body dl>div,.work-idea,
+.approach-list p,.price-grid ul,.flow-list span,.profile-section>div>p,
+.profile-section dl,.profile-section dl>div,.contact-section>p:not(.eyebrow),
+.contact-sample{font-size:16px;line-height:1.9}
+.section-intro>p,.work-body dt,.work-body dd,.approach-list p,
+.price-grid article>p,.price-grid ul,.price-note,.flow-list span,
+.profile-section dt,.sample-explainer{color:#344b5b}
+.work-links{font-size:16px;font-weight:600;flex-wrap:wrap}
+.sample-explainer,.price-note,.price-grid article>p{font-size:14px}
+.work-cover span,.work-cover small,.work-koumuten .work-cover small{font-size:14px}
+.work-salon .work-cover small{font-size:40px}
+.work-body dl>div{grid-template-columns:96px 1fr}
+.feature-caption{flex-wrap:wrap;gap:4px 16px;letter-spacing:0}
+.hero-main,.hero-feature,.section-intro>*{min-width:0}
+.contact-section .eyebrow,.contact-section>p.contact-new,.contact-sample p{color:#e4edf3}
+@media(max-width:1000px) and (min-width:701px){
+.portfolio-hero{grid-template-columns:1fr 1fr;gap:4%}
+.portfolio-header{padding-inline:24px}
+.portfolio-header nav{gap:16px}
+.portfolio-header nav a{font-size:14px}
+.price-grid{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+.portfolio-header{flex-wrap:wrap;gap:12px}
+.portfolio-header nav{margin-left:auto}
+.portfolio-header nav a{font-size:14px}
+.logo small{font-size:10px;letter-spacing:.08em}
+.hero-description{font-size:17px}
+.hero-description br{display:none}
+.primary-link{font-size:16px;gap:18px;max-width:100%;padding:14px 16px}
+.primary-link span{flex-shrink:0}
+.work-meta{flex-wrap:wrap;gap:4px 16px}
+.work-body dl>div,.profile-section dl>div{grid-template-columns:1fr;gap:2px;margin-block:14px}
+.work-body dt,.profile-section dt{font-weight:700}
+.flow-list{grid-template-columns:1fr}
+.flow-list b{font-size:18px}
+.work-salon .work-cover small{font-size:35px}
+.work-cover small,.work-cover span{letter-spacing:0}
+}
